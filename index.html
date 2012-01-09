@@ -15,6 +15,11 @@
 				speed: 1000,
 				timeout: 5000
 			});
+			// the following code makes it possible to use the following buttons on your keyboard; next and previous (this way you can go to the next slide or previous)
+			$(document).bind('keydown', function(e) {
+				if (e.keyCode == 37)$('#myslides').cycle('prev');
+				else if (e.keyCode == 39)$('#myslides').cycle('next');
+			});
 		}); 
 	</script>
 </head>
