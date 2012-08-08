@@ -1,0 +1,61 @@
+@font-face {
+    font-family:'ClimaconsRegular';
+    src: url('../font/climacons-webfont.eot');
+    src: url('../font/climacons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/climacons-webfont.woff') format('woff'),
+         url('../font/climacons-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*  Climacons styles
+    ------------------------------------------------------- */
+[class^="weather-"]:before, [class*=" weather-"]:before {
+  font-family: 'ClimaconsRegular';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  position: relative;
+  margin: 0 0 0 25%;
+}
+a [class^="weather-"], a [class*=" weather-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+
+.weather-partly-sunny:before	{ content:"1"; }
+.weather-scattered-thunderstorms:before	{ content:"x"; }
+.weather-showers:before	{ content:"6"; }
+.weather-scattered-showers:before	{ content:"7"; }
+.weather-rain-and-snow:before	{ content:"e"; }
+.weather-overcast:before	{ content:"'"; }
+.weather-light-snow:before	{ content:"]"; }
+.weather-freezing-drizzle:before	{ content:"6"; }
+.weather-chance-of-rain:before	{ content:"6"; }
+.weather-sunny:before	{ content:"v"; }
+.weather-clear:before	{ content:"v"; }
+.weather-mostly-sunny:before	{ content:"v"; }
+.weather-partly-cloudy:before	{ content:"1"; }
+.weather-mostly-cloudy:before	{ content:"'"; }
+.weather-chance-of-storm:before	{ content:"z"; }
+.weather-rain:before	{ content:"6"; }
+.weather-chance-of-snow:before	{ content:"]"; }
+.weather-cloudy:before	{ content:"'"; }
+.weather-mist:before	{ content:"6"; }
+.weather-storm:before	{ content:"z"; }
+.weather-thunderstorm:before	{ content:"z"; }
+.weather-chance-of-tstorm:before	{ content:"x"; }
+.weather-sleet:before	{ content:"e"; }
+.weather-snow:before	{ content:"]"; }
+.weather-icy:before	{ content:"-"; }
+.weather-dust:before	{ content:"("; }
+.weather-fog:before	{ content:"g"; }
+.weather-smoke:before	{ content:"g"; }
+.weather-haze:before	{ content:"g"; }
+.weather-flurries:before	{ content:"]"; }
+.weather-light-rain:before	{ content:"6"; }
+.weather-snow-showers:before	{ content:"]"; }
+.weather-hail:before	{ content:"e"; }
