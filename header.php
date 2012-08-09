@@ -15,6 +15,12 @@
 	<!-- Force a page reload every hour & don't cache anything -->
 	<meta http-equiv="refresh" content="3600">
     <meta http-equiv="pragma" content="nocache">
+
+	<!-- Matt Wilcox's Adaptive Images adaptive-images.com 
+		You'll need to edit the .htaccess in your Wordpress root directory
+		You'll also need to move adaptive-images.php to your Wordpress root directory		
+	-->
+	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
 	
 	<!-- Included Foundation CSS Files -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/foundation.css">
