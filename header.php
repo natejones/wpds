@@ -60,7 +60,6 @@
 	
 	<!-- Start the main container -->
 	<div id="container" class="container" role="document">
-		<div id="branding"></div>
-		<div id="location"><?php echo home_url(); ?></div>	
+		<div id="location" class="hide-for-small"><?php $str = site_url(); $regex = '/(?<!href=["\'])http:\/\//';	$str = preg_replace($regex, '', $str); echo $str; ?></div>	
 		<!-- Row for main content area -->
 		<div id="main" class="row">

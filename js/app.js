@@ -13,8 +13,6 @@ jQuery(document).ready(function ($) {
 		});
 	}
 
-	/* BRANDING ---------------------------------*/
-	$('#location').replace('http://','');
 
 	/* FOOTER WIDGETS ---------------------------------*/
 	$('.widget_text').equalHeights()

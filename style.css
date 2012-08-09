@@ -81,6 +81,27 @@ ul, ol { list-style: none; }
 	box-shadow: 0px 0px 4px 0px rgba(0,0,0,.4);
 }
 
+#location {
+	display:inline-block;
+	position:absolute;
+	z-index: 99;
+	top:0;
+	right:0;
+	text-align: right;
+	padding:1% 2%;
+	background: rgba(0,0,0,.4);
+	color:#fff;
+	text-shadow:1px 1px 0px #444;
+	font-size: 20px; font-size: 2rem;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	border-bottom-left-radius: 8px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+
 /*  --------------------------
     BODY GRADIENTS thanks to colorzilla's Ultimate CSS Gradient Generator :: http://www.colorzilla.com/gradient-editor/
     ----------------------- */
@@ -176,32 +197,6 @@ ul, ol { list-style: none; }
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-9 */
 	}
 
-/*  --------------------------
-    CLOCK thanks to @Bluxart :: http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/
-    ----------------------- */
-.clock {width:98%; margin:0 auto; padding: 0; color:#fff }
-
-#Date { font-size: 24px; font-size:2.4rem; text-align:center; margin-top:0; display:block; float:none; position:relative; }
-
-.clock ul { width:100%; margin:0 auto !important; padding:0px; list-style:none; text-align:center; display:block; }
-.clock ul li { display:inline; text-align:center; font-size: 60px; font-size: 6rem; font-weight: normal; margin:0; color:#fff; }
-
-#point { padding:0; position:relative; -moz-animation:mymove 1s ease infinite; -webkit-animation:mymove 1s ease infinite; }
-	/* Simple Animation */
-	@-webkit-keyframes mymove 
-	{
-	0% {opacity:.8; }
-	50% {opacity:.1; }
-	100% {opacity:.8;  }	
-	}
-	
-	@-moz-keyframes mymove 
-	{
-	0% {opacity:.8; }
-	50% {opacity:.1; }
-	100% {opacity:.8;  }	
-	}
-
 
 /* -----------------------------------------
    Typography
@@ -243,11 +238,11 @@ a, a:hover, a:focus, a:active { color:#fff; text-decoration:none; border-bottom:
 		left:0;
 		padding:0!important;
 		-webkit-border-top-left-radius: 8px;
-		-webkit-border-top-left-radius: 8px;
+		-webkit-border-top-right-radius: 8px;
 		-moz-border-radius-topleft: 8px;
-		-webkit-border-top-right-radius: 8px;
-		-webkit-border-top-right-radius: 8px;
-		-moz-border-radius-top right: 8px;
+		-moz-border-radius-topright: 8px;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
 		-moz-background-clip: padding;
 		-webkit-background-clip: padding-box;
 		background-clip: padding-box;
@@ -265,6 +260,56 @@ a, a:hover, a:focus, a:active { color:#fff; text-decoration:none; border-bottom:
 			footer .textwidget { padding: 0 1.5%; }
 			footer ul#twitter_update_list li a { display:none; }
 			footer ul#twitter_update_list li span a { display:inline; }
+
+
+/*  --------------------------
+    CLOCK thanks to @Bluxart :: http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/
+    ----------------------- */
+.clock {width:98%; margin:0 auto; padding: 0; color:#fff }
+
+#Date { font-size: 24px; font-size:2.4rem; text-align:center; margin-top:0; display:block; float:none; position:relative; }
+
+.clock ul { width:100%; margin:0 auto !important; padding:0px; list-style:none; text-align:center; display:block; }
+.clock ul li { display:inline; text-align:center; font-size: 60px; font-size: 6rem; font-weight: normal; margin:0; color:#fff; }
+
+#point { padding:0; position:relative; -moz-animation:mymove 1s ease infinite; -webkit-animation:mymove 1s ease infinite; }
+	/* Simple Animation */
+	@-webkit-keyframes mymove 
+	{
+	0% {opacity:.8; }
+	50% {opacity:.1; }
+	100% {opacity:.8;  }	
+	}
+	
+	@-moz-keyframes mymove 
+	{
+	0% {opacity:.8; }
+	50% {opacity:.1; }
+	100% {opacity:.8;  }	
+	}
+
+
+/* -----------------------------------------
+   Weather
+----------------------------------------- */	
+#weather { overflow:hidden; margin:0; padding:0; height:100%; max-height:100%; }
+	[class^="weather-"]:before, [class*=" weather-"]:before {
+	  font-size: 90px; font-size: 9rem;
+	
+	}
+	#temp {
+		font-size:40px; font-size: 4rem;
+		padding: 0;
+		position:relative;
+		margin:-7px 0 7px 0;
+	}	
+	#condition {
+		font-size:22px; font-size: 2.2rem;
+		text-align: right;
+		padding: 0;
+		position:relative;
+		margin:7px 0 7px 0;
+	}
 
 
 /* -----------------------------------------
@@ -291,7 +336,6 @@ div.orbit-wrapper div.slider-nav { display: none; }
 		div.post:last-child { border-bottom:none; }
 }
 
-
 /* -----------------------------------------
    Tablet
    (include .touch for each to target with Modernizr)
@@ -312,26 +356,3 @@ div.orbit-wrapper div.slider-nav { display: none; }
 			min-width:100%;	
 	}
 }
-
-
-/* -----------------------------------------
-   Weather
------------------------------------------ */	
-#weather { overflow:hidden; margin:0; padding:0; height:100%; max-height:100%; }
-	[class^="weather-"]:before, [class*=" weather-"]:before {
-	  font-size: 90px; font-size: 9rem;
-	
-	}
-	#temp {
-		font-size:40px; font-size: 4rem;
-		padding: 0;
-		position:relative;
-		margin:-7px 0 7px 0;
-	}	
-	#condition {
-		font-size:22px; font-size: 2.2rem;
-		text-align: right;
-		padding: 0;
-		position:relative;
-		margin:7px 0 7px 0;
-	}
