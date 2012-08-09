@@ -1,13 +1,12 @@
 <?php
-function reverie_setup() {
-	// Add language supports. Please note that Reverie Framework does not include language files.
+function digitalsign_setup() {
 	
 	// Add post thumbnail supports. http://codex.wordpress.org/Post_Thumbnails
 	add_theme_support('post-thumbnails');
 	set_post_thumbnail_size(400, 400, true);
 	
 }
-add_action('after_setup_theme', 'reverie_setup');
+add_action('after_setup_theme', 'digitalsign_setup');
 
 // create widget area: footer
 $sidebars = array('Footer');
