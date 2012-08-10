@@ -1,24 +1,16 @@
 /*
 Theme Name:         Digital Sign
 Theme URI:          http://pixelydo.com/flatscreens/
-Description:        Digital Sign is an HTML5 responsive WordPress framework based on Zhen Huang's Reverie, based on ZURB's Foundation.
-Version:            0.0.1
+Description:        Digital Sign is an HTML5 responsive WordPress framework that uses ZURB's Foundation, and was loosely started from Zhen Huang's Reverie.
+Version:            1.0
 Author:             Nate Jones
 Author URI:         http://pixelydo.com/
+Tags: 				digital-signage, digital sign, signage, sign, responsive, HTML5, large screen, large-screen
 
-License:            MIT License
-License URI:        http://www.opensource.org/licenses/mit-license.php
+License:            Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
+License URI:        http://creativecommons.org/licenses/by-nc/3.0/
 */
 
-/* -------------------------------------------------- 
-   Table of Contents
------------------------------------------------------
-:: Customized Adjustments of Foundation for WordPress
-:: Styling Basic WordPress Outputs
-:: Customize Foundation Style Pagination for WP-Pagenavi
-:: Customize for BuddyPress
-:: Your Customized Style
-*/
 
 /* ---------------------------------------------------
    Customized Adjustments of Foundation for WordPress
