@@ -1,5 +1,10 @@
 Digital Signage Wordpress theme using Zurb's crazy brilliant Foundation.
 
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+You are free to share & remix, but you must make attribution and you may not sell it.
+http://creativecommons.org/licenses/by-nc/3.0/
+
+
 
 Here are some random notes:
 
@@ -10,14 +15,9 @@ You'll need to edit the .htaccess in your Wordpress root directory (A sample .ht
 You'll also need to move adaptive-images.php (in the AdaptiveImages_STUFF-TO-MOVE folder) to your Wordpress root directory		
 
 
-
-
-
 WEATHER WIDGET
 Set the weather location and other variables in weather.php.
 The javascript timer for the weather widget is in footer.php to allow it to find the correct path to weather.php.
-
-
 
 
 CLOCK
