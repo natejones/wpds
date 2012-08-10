@@ -21,17 +21,23 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/foundation.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.equalheights.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#weather').load('<?php echo get_template_directory_uri(); ?>/weather.php');
-			var auto_refresh = setInterval(
-			function () {
-				$('#weather').load('<?php echo get_template_directory_uri(); ?>/weather.php');
-			}, 600000);	// 10 minutes in milliseconds
-		});
-	</script>
-	<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-	<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/natejones.json?callback=twitterCallback2&count=1"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				if (matchMedia('only screen and (min-width: 767px)').matches) {
+					$.getScript("<?php echo get_template_directory_uri(); ?>/js/jquery.equalheights.js");
+
+					$('#weather').load('<?php echo get_template_directory_uri(); ?>/weather.php');
+						var auto_refresh = setInterval(
+						function () {
+							$('#weather').load('<?php echo get_template_directory_uri(); ?>/weather.php');
+						}, 600000);	// 10 minutes in milliseconds
+
+					$.getScript("http://twitter.com/javascripts/blogger.js");
+					$.getScript("http://twitter.com/statuses/user_timeline/natejones.json?callback=twitterCallback2&count=1");
+
+				} // end matchMedia
+			});
+		</script>
 </body>
 </html>
 
