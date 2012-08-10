@@ -11,7 +11,7 @@
 	<title><?php wp_title(''); ?></title>
 	
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<!-- Force a page reload every hour & don't cache anything -->
 	<meta http-equiv="refresh" content="3600">
     <meta http-equiv="pragma" content="nocache">
