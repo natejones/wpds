@@ -249,6 +249,31 @@ function my_remove_meta_boxes() {
 }
 
 add_action( 'admin_menu', 'my_remove_meta_boxes' );
+add_action('admin_init', 'remove_all_media_buttons');
+
+function remove_all_media_buttons()
+{
+    remove_all_actions('media_buttons');
+}
+
+// TinyMCE: First line toolbar customizations
+if( !function_exists('base_extended_editor_mce_buttons') ){
+	function base_extended_editor_mce_buttons($buttons) {
+		// The settings are returned in this array. Customize to suite your needs.
+		return array(
+			'bold', 'italic', 'underline', 'sub', 'sup', 'bullist', 'numlist', 'charmap', 'removeformat', 'spellchecker', 'fullscreen'
+		);
+		/* WordPress Default
+		return array(
+			'bold', 'italic', 'strikethrough', 'separator', 
+			'bullist', 'numlist', 'blockquote', 'separator', 
+			'justifyleft', 'justifycenter', 'justifyright', 'separator', 
+			'link', 'unlink', 'wp_more', 'separator', 
+			'spellchecker', 'fullscreen', 'wp_adv'
+		); */
+	}
+	add_filter("mce_buttons", "base_extended_editor_mce_buttons", 0);
+}
 
 
 
