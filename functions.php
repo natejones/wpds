@@ -232,4 +232,24 @@ function execute_php($html){
      }
      return $html;
 }
+/* Hide some extra meta boxes from the Post admin page */
+function my_remove_meta_boxes() {
+    remove_meta_box('postcustom', 'post', 'core');
+    remove_meta_box('commentsdiv', 'post', 'core');
+    remove_meta_box('slugdiv', 'post', 'core');
+    remove_meta_box('revisionsdiv', 'post', 'core');
+    remove_meta_box('commentstatusdiv', 'post', 'core');
+    remove_meta_box('postcustom', 'post', 'core');
+    remove_meta_box('postexcerpt', 'post', 'core');
+    remove_meta_box('trackbacksdiv', 'post', 'core');
+    remove_meta_box('postexcerpt', 'post', 'core');
+    remove_meta_box('formatdiv', 'post', 'core');
+    remove_meta_box('pageparentdiv', 'post', 'core');
+    remove_meta_box('authordiv', 'post', 'core');
+}
+
+add_action( 'admin_menu', 'my_remove_meta_boxes' );
+
+
+
 ?>
