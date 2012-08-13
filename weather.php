@@ -1,13 +1,41 @@
 <?php
-$xml = simplexml_load_file('http://www.google.com/ig/api?weather=60605');
-$information = $xml->xpath("/xml_api_reply/weather/forecast_information");
-$current = $xml->xpath("/xml_api_reply/weather/current_conditions");
-$forecast_list = $xml->xpath("/xml_api_reply/weather/forecast_conditions");
+
+	/*----------
+	Thank you, @chriscoyier! 
+	http://css-tricks.com/using-weather-data-to-change-your-websites-apperance-through-php-and-css/
+	----------*/
+
+	$data = get_data("http://weather.yahooapis.com/forecastrss?p=60605&u=f");
+	$condition = get_match('/<yweather:condition  text="(.*)"/isU',$data);
+	$temp = get_match('/<yweather:condition\s+(?:.*\s)?temp="(.+)"/isU',$data);
+	$code = get_match('/<yweather:condition\s+(?:.*\s)?code="(.+)"/isU',$data);
+
+	
+	/* helper:  does regex */  
+	function get_match($regex,$content)  
+	{  
+		preg_match($regex,$content,$matches);  
+		return $matches[1];  
+	}
+	
+	/* gets the xml data from Alexa */
+	function get_data($url)
+	{
+		$ch = curl_init();
+		$timeout = 5;
+		curl_setopt($ch,CURLOPT_URL,$url);
+		curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+		curl_setopt($ch,CURLOPT_CONNECTTIMEOUT,$timeout);
+		$xml = curl_exec($ch);
+		curl_close($ch);
+		return $xml;
+	}
+	
 ?>
 	<div class="row">
-		<div class="twelve columns weather-<?php $weather =  $current[0]->condition['data']; $weatherclass = str_replace(' ','-',$weather); $weatherclass = strtolower($weatherclass); echo $weatherclass; ?>">&nbsp;</div>
+		<div class="twelve columns weather-<?php echo $code ?>">&nbsp;</div>
 	</div>
 	<div class="row">
-		<div id="temp" class="four columns "><?= $current[0]->temp_f['data'] ?>&deg;</div>
-		<div id="condition" class="eight columns"><?= $current[0]->condition['data'] ?></div>
+		<div id="temp" class="four columns "><?php echo $temp ?>&deg;</div>
+		<div id="condition" class="eight columns"><?php echo $condition; ?></div>
 	</div>
