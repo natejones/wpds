@@ -33,7 +33,7 @@
 						}, 600000);	// 10 minutes in milliseconds
 
 					$.getScript("http://twitter.com/javascripts/blogger.js");
-					$.getScript("http://twitter.com/statuses/user_timeline/natejones.json?callback=twitterCallback2&count=1");
+					$.getScript("http://twitter.com/statuses/user_timeline/natejones.json?callback=twitterCallback2&count=2");
 
 				} // end matchMedia
 			});
