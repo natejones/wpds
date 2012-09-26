@@ -3,9 +3,12 @@
 	/*----------
 	Thank you, @chriscoyier! 
 	http://css-tricks.com/using-weather-data-to-change-your-websites-apperance-through-php-and-css/
+	
+	Line 11 parameters are w=YourWOEID and u=units (f or c)
+	Lookup your WOEID: http://woeid.rosselliot.co.nz/lookup/
 	----------*/
 
-	$data = get_data("http://weather.yahooapis.com/forecastrss?p=60605&u=f");
+	$data = get_data("http://weather.yahooapis.com/forecastrss?w=2379574&u=f");
 	$condition = get_match('/<yweather:condition  text="(.*)"/isU',$data);
 	$temp = get_match('/<yweather:condition\s+(?:.*\s)?temp="(.+)"/isU',$data);
 	$code = get_match('/<yweather:condition\s+(?:.*\s)?code="(.+)"/isU',$data);
