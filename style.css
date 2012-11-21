@@ -32,7 +32,7 @@ License URI:        http://creativecommons.org/licenses/by-nc/3.0/
 	.entry-content img { padding-right:2%; }
 	
 	/* The Link */
-	.entry-content a { 
+	.entry-content a.panellink { 
 		font-size: 24px; font-size: 2.4rem;
 		float:right;
 		margin-top:-24px;
@@ -223,6 +223,7 @@ a, a:hover, a:focus, a:active { color:#fff; text-decoration:none; border-bottom:
 		background-image: -o-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,.4));
 		background-image: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.4));
 		width:100%;
+		min-height: 12%;
 		position:fixed;
 		display:block;
 		z-index: 99;
@@ -257,7 +258,7 @@ a, a:hover, a:focus, a:active { color:#fff; text-decoration:none; border-bottom:
 /*  --------------------------
     CLOCK thanks to @Bluxart :: http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/
     ----------------------- */
-.clock {width:98%; margin:0 auto; padding: 0; color:#fff }
+.clock {width:98%; margin:-20px auto 0 auto; padding: 0; color:#fff }
 
 #Date { font-size: 24px; font-size:2.4rem; text-align:center; margin-top:0; display:block; float:none; position:relative; }
 
@@ -284,7 +285,7 @@ a, a:hover, a:focus, a:active { color:#fff; text-decoration:none; border-bottom:
 /* -----------------------------------------
    Weather
 ----------------------------------------- */	
-#weather { overflow:hidden; margin:0; padding:0; height:100%; max-height:100%; }
+#weather { overflow:hidden; margin:-4px 0 0 0; padding:0; height:100%; max-height:100%; display: block; }
 	[class^="weather-"]:before, [class*=" weather-"]:before {
 	  font-size: 90px; font-size: 9rem;
 	
@@ -293,16 +294,16 @@ a, a:hover, a:focus, a:active { color:#fff; text-decoration:none; border-bottom:
 		font-size:40px; font-size: 4rem;
 		padding: 0;
 		position:relative;
-		margin:-7px 0 7px 0;
+		margin:-14px 0 7px 0;
 	}	
 	#condition {
 		font-size:22px; font-size: 2.2rem;
 		text-align: right;
 		padding: 0;
 		position:relative;
-		margin:7px 0 7px 0;
+		margin:0 0 7px 0;
+		display: inline-block;
 	}
-
 
 /* -----------------------------------------
    Orbit
