@@ -32,9 +32,6 @@
 							$('#weather').load('<?php echo get_template_directory_uri(); ?>/weather.php');
 						}, 600000);	// 10 minutes in milliseconds
 
-					$.getScript("http://twitter.com/javascripts/blogger.js");
-					$.getScript("http://twitter.com/statuses/user_timeline/natejones.json?callback=twitterCallback2&count=2");
-
 				} // end matchMedia
 			});
 		</script>

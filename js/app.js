@@ -21,6 +21,10 @@ jQuery(document).ready(function ($) {
 	$('.row article.widget').last().removeClass('two').addClass('six');
 
 
+	$.getJSON("http://api.twitter.com/1/statuses/user_timeline/natejones.json?count=1&include_rts=1&callback=?", function(data) {
+     $("#twitter").html(data[0].text);
+});
+
 	/* WEATHER WIDGET ---------------------------------
 	Set the weather location and other variables in weather.php.
 	The javascript timer for the weather widget is in footer.php to allow it to find the correct path to weather.php.

@@ -45,9 +45,6 @@ WIDGETS
 	TWITTER WIDGET
 		Drag a text widget into the Footer. Paste in the following div:
 		<div id="twitter_div">
-			<ul id="twitter_update_list">
-				<li>&nbsp;</li>
-			</ul>
 		</div>
 
-		adjust footer.php line 36 to include your Twitter username, not mine.
+		adjust js/app.js line 24 to include your Twitter username, not mine.
