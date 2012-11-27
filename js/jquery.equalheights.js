@@ -19,7 +19,7 @@
 
 (function($) {
 	$.fn.equalHeights = function(minHeight, maxHeight) {
-		tallest = (minHeight) ? minHeight : 0;
+		tallest = (minHeight) ? minHeight : 140;
 		this.each(function() {
 			if($(this).height() > tallest) {
 				tallest = $(this).height();
