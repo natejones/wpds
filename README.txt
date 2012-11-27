@@ -5,20 +5,22 @@ You are free to share & remix, but you must make attribution and you may not sel
 http://creativecommons.org/licenses/by-nc/3.0/
 
 
+## I really want to see a picture of this being used. Seriously. Please take a quick picture with your phone and tweet it to me @natejones, or email nate@pixelydo.com. ##
+
 
 Here are some random notes:
 
-ADAPTIVE IMAGES
+##ADAPTIVE IMAGES
 	We're using Matt Wilcox's Adaptive Images (adaptive-images.com) for low-bandwidth images.
 
 	You'll need to edit the .htaccess in your Wordpress root directory (A sample .htaccess is in the AdaptiveImages_STUFF-TO-MOVE folder)
 	You'll also need to move adaptive-images.php (in the AdaptiveImages_STUFF-TO-MOVE folder) to your Wordpress root directory		
 
 
-WIDGETS
+##WIDGETS
 	So, I like four widgets in the footer, but feel free to change up functions.php & $('.row article.widget').last().removeClass().addClass(); in app.js if you want.
 
-	WEATHER WIDGET
+	###WEATHER WIDGET
 		Drag a text widget into the Footer. Paste in the following div:
 		<div id="weather" class="twelve columns">
 		</div>
@@ -27,7 +29,7 @@ WIDGETS
 		The javascript timer for the weather widget is in footer.php to allow it to find the correct path to weather.php.
 
 
-	CLOCK WIDGET
+	###CLOCK WIDGET
 		Drag a text widget into the Footer. Paste in the following div:
 		<div class="clock">
 			<ul>
@@ -42,7 +44,7 @@ WIDGETS
 		(thanks to @Bluxart :: http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/)
 
 
-	TWITTER WIDGET
+	###TWITTER WIDGET
 		Drag a text widget into the Footer. Paste in the following div:
 		<div id="twitter_div">
 		</div>
