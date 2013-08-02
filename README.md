@@ -7,7 +7,7 @@ You are free to share & remix, but you must make attribution and you may not sel
 I really want to see a picture of this being used. Seriously. Please take a quick picture with your phone and tweet it to me @natejones, or email nate@pixelydo.com. ##
 
 ##Adaptive Images
-We're using Matt Wilcox's [Adaptive Images](adaptive-images.com) for low-bandwidth images.
+We're using Matt Wilcox's [Adaptive Images](http://adaptive-images.com) for low-bandwidth images.
 
 You'll need to edit the .htaccess in your Wordpress root directory (A sample .htaccess is in the AdaptiveImages_STUFF-TO-MOVE folder)
 You'll also need to move adaptive-images.php (in the AdaptiveImages_STUFF-TO-MOVE folder) to your Wordpress root directory		
