@@ -1,0 +1,316 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you don't want to use normalize
+@import "normalize";
+
+@import "font-awesome";
+
+// Comment out this import if you are customizing you imports below
+//@import "foundation";
+
+// Compass' CSS3 mixins
+@import "compass/css3";
+@import "compass/layout/sticky-footer";
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+ @import "foundation/components/global"; // *always required
+ @import "foundation/components/grid";
+// @import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+ @import "foundation/components/type";
+ @import "foundation/components/buttons";
+ @import "foundation/components/forms"; // *requires components/buttons
+// @import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
+// @import "foundation/components/button-groups"; // *requires components/buttons
+ @import "foundation/components/dropdown-buttons"; // *requires components/buttons
+// @import "foundation/components/split-buttons"; // *requires components/buttons
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+// @import "foundation/components/top-bar";  // *requires components/grid
+// @import "foundation/components/orbit";
+ @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+ @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+// @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+ @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+@include sticky-footer(200px, ".content", ".content-dock", ".dock");
+ 
+
+
+body, .columns, .column { padding: 0; }
+
+
+//#   /$$$$$$$$                                                                       /$$                
+//#  |__  $$__/                                                                      | $$                
+//#     | $$    /$$   /$$  /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$ | $$$$$$$  /$$   /$$
+//#     | $$   | $$  | $$ /$$__  $$ /$$__  $$ /$$__  $$ /$$__  $$ |____  $$ /$$__  $$| $$__  $$| $$  | $$
+//#     | $$   | $$  | $$| $$  \ $$| $$  \ $$| $$  \ $$| $$  \__/  /$$$$$$$| $$  \ $$| $$  \ $$| $$  | $$
+//#     | $$   | $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$       /$$__  $$| $$  | $$| $$  | $$| $$  | $$
+//#     | $$   |  $$$$$$$| $$$$$$$/|  $$$$$$/|  $$$$$$$| $$      |  $$$$$$$| $$$$$$$/| $$  | $$|  $$$$$$$
+//#     |__/    \____  $$| $$____/  \______/  \____  $$|__/       \_______/| $$____/ |__/  |__/ \____  $$
+//#             /$$  | $$| $$                 /$$  \ $$                    | $$                 /$$  | $$
+//#            |  $$$$$$/| $$                |  $$$$$$/                    | $$                |  $$$$$$/
+//#             \______/ |__/                 \______/                     |__/                 \______/ 
+
+
+
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+    @include transition-property(all);
+    @include transition-duration(0.3s);
+    @include transition-timing-function(ease-in);
+
+}
+
+h1 { 
+	text-align: left;
+	font-size: emCalc(24px);
+}
+
+h2 { 
+	font-size: emCalc(16px);
+	margin-top: 0;
+	margin-bottom: .8em;
+	text-transform: uppercase;
+}
+p {
+	padding-top: 0;
+	margin-top: 0;
+	line-height: 1.4;
+	font-size: emCalc(14px);
+}
+p.link  {
+	margin-top: 1em;
+	@include grid-column(12);
+}
+@media #{$small} { 
+	h1 { font-size: emCalc(80px); }
+	h2 { font-size: emCalc(34px); }
+	p { font-size: emCalc(24px); }
+	.copy { margin-left: 1em; }
+	p.link  {
+		display: none;
+	}
+}
+@media #{$medium} {
+	h2 { 
+
+	}
+}
+
+
+
+
+//#    /$$$$$$    /$$                                     /$$                                  
+//#   /$$__  $$  | $$                                    | $$                                  
+//#  | $$  \__/ /$$$$$$    /$$$$$$  /$$   /$$  /$$$$$$$ /$$$$$$   /$$   /$$  /$$$$$$   /$$$$$$ 
+//#  |  $$$$$$ |_  $$_/   /$$__  $$| $$  | $$ /$$_____/|_  $$_/  | $$  | $$ /$$__  $$ /$$__  $$
+//#   \____  $$  | $$    | $$  \__/| $$  | $$| $$        | $$    | $$  | $$| $$  \__/| $$$$$$$$
+//#   /$$  \ $$  | $$ /$$| $$      | $$  | $$| $$        | $$ /$$| $$  | $$| $$      | $$_____/
+//#  |  $$$$$$/  |  $$$$/| $$      |  $$$$$$/|  $$$$$$$  |  $$$$/|  $$$$$$/| $$      |  $$$$$$$
+//#   \______/    \___/  |__/       \______/  \_______/   \___/   \______/ |__/       \_______/
+
+
+
+
+
+li.post-box {
+	padding: 20px;
+	display: inline-block;
+	height: 100%;
+	min-height: 100%;
+}
+.orbit-prev, .orbit-next, .orbit-slide-number {
+	display: none;
+	height: 0;
+	width: 0;
+}
+.dock { display: none; }
+	@media #{$medium} { 
+
+	}
+	@media #{$large} { 
+
+	}
+
+
+		
+	@media #{$small} { 
+	
+		*, html, body {
+		  max-height: 100%;
+		  overflow: hidden;
+		}
+		.orbit-slides-container {
+			height: 100%;
+			min-height: 100%;	
+		}
+		li.post-box {
+			height: 100%;
+			min-height: 100vh;
+			width: 100vw;
+			min-width: 100vw;
+			overflow: hidden;
+		}
+		img.feature {
+			margin-left: 1em
+		}
+
+
+		.page-wrap {
+		  min-height: 100%;
+		  /* equal to footer height */
+		  margin: 0 0 -215px 0; 
+		  padding-bottom: 0;
+		}
+		.page-wrap:after {
+		  content: "";
+		  display: block;
+		  padding-bottom: 0;
+		}
+		.footer, .page-wrap:after {
+		  /* .push must be the same height as footer */
+		  height: 215px;
+		  padding-bottom: 0;
+		  margin: 0;
+		}
+		.dock {
+			background: rgba(79,75,75,0.62);
+			position: relative;
+			display: block;
+			height: 200px;
+			width: 100%;
+		}
+			.dock .columns {
+				border-right: 1px solid rgba(255,255,255,0.4);
+				display: inline-block;
+				height: 100%;
+				padding: 1em;
+				color: #fff;
+			}
+			.dock .columns:last-child {
+				border-right: none;
+			}
+			.dock h6 { color: #ffffff; }
+	}	
+	
+	
+//#   /$$      /$$                       /$$     /$$                          
+//#  | $$  /$ | $$                      | $$    | $$                          
+//#  | $$ /$$$| $$  /$$$$$$   /$$$$$$  /$$$$$$  | $$$$$$$   /$$$$$$   /$$$$$$ 
+//#  | $$/$$ $$ $$ /$$__  $$ |____  $$|_  $$_/  | $$__  $$ /$$__  $$ /$$__  $$
+//#  | $$$$_  $$$$| $$$$$$$$  /$$$$$$$  | $$    | $$  \ $$| $$$$$$$$| $$  \__/
+//#  | $$$/ \  $$$| $$_____/ /$$__  $$  | $$ /$$| $$  | $$| $$_____/| $$      
+//#  | $$/   \  $$|  $$$$$$$|  $$$$$$$  |  $$$$/| $$  | $$|  $$$$$$$| $$      
+//#  |__/     \__/ \_______/ \_______/   \___/  |__/  |__/ \_______/|__/      
+
+	
+.icon {
+	font-size: emCalc(200px);
+	float: left;
+	display: inline;
+	margin: -5% 0 0 0;
+}
+.conditions {
+	float: right;
+	display: inline;
+	margin: 16px 46px 0 0;
+	text-align: left;		
+}
+.temperature {
+	font-size: emCalc(80px);
+	display: block;
+	line-height: 1.1;
+}
+.condition {
+	font-size: emCalc(30px);
+	display: block;
+	line-height: 1.3;
+}
+	
+@font-face {
+    font-family:'ClimaconsRegular';
+    src: url('../font/climacons-webfont.eot');
+    src: url('../font/climacons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/climacons-webfont.woff') format('woff'),
+         url('../font/climacons-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*  Climacons styles
+    ------------------------------------------------------- */
+[class^="weather-"]:before, [class*=" weather-"]:before {
+  font-family: 'ClimaconsRegular';
+}
+a [class^="weather-"], a [class*=" weather-"] {
+
+}
+
+
+.weather-0:before { content:"("; } /* tornado */
+.weather-1:before { content:""; } /* tropical storm */
+.weather-2:before { content:"("; } /* hurricane */
+.weather-3:before { content:"z"; } /* severe thunderstorms */
+.weather-4:before { content:"z"; } /* thunderstorms */
+.weather-5:before { content:"y"; } /* mixed rain and snow */
+.weather-6:before { content:"y"; } /* mixed rain and sleet */
+.weather-7:before { content:"y"; } /* mixed snow and sleet */
+.weather-8:before { content:"e"; } /* freezing drizzle */
+.weather-9:before { content:"o"; } /* drizzle */
+.weather-10:before { content:"e"; } /* freezing rain */
+.weather-11:before { content:"6"; } /* showers */
+.weather-12:before { content:"6"; } /* showers */
+.weather-13:before { content:"]"; } /* snow flurries */
+.weather-14:before { content:"]"; } /* light snow showers */
+.weather-15:before { content:"]"; } /* blowing snow */
+.weather-16:before { content:"]"; } /* snow */
+.weather-17:before { content:"o"; } /* hail */
+.weather-18:before { content:"o"; } /* sleet */
+.weather-19:before { content:"g"; } /* dust */
+.weather-20:before { content:"g"; } /* foggy */
+.weather-21:before { content:"g"; } /* haze */
+.weather-22:before { content:"g"; } /* smoky */
+.weather-23:before { content:"k"; } /* blustery */
+.weather-24:before { content:"k"; } /* windy */
+.weather-25:before { content:"-"; } /* cold */
+.weather-26:before { content:"`"; } /* cloudy */
+.weather-27:before { content:"2"; } /* mostly cloudy (night) */
+.weather-28:before { content:"1"; } /* mostly cloudy (day) */
+.weather-29:before { content:"2"; } /* partly cloudy (night) */
+.weather-30:before { content:"1"; } /* partly cloudy (day) */
+.weather-31:before { content:"/"; } /* clear (night) */
+.weather-32:before { content:"v"; } /* sunny */
+.weather-33:before { content:"/"; } /* fair (night) */
+.weather-34:before { content:"v"; } /* fair (day) */
+.weather-35:before { content:"e"; } /* mixed rain and hail */
+.weather-36:before { content:"E"; } /* hot */
+.weather-37:before { content:"z"; } /* isolated thunderstorms */
+.weather-38:before { content:"z"; } /* scattered thunderstorms */
+.weather-39:before { content:"z"; } /* scattered thunderstorms */
+.weather-40:before { content:"6"; } /* scattered showers */
+.weather-41:before { content:"]"; } /* heavy snow */
+.weather-42:before { content:"]"; } /* scattered snow showers */
+.weather-43:before { content:"]"; } /* heavy snow */
+.weather-44:before { content:"`"; } /* partly cloudy */
+.weather-45:before { content:"z"; } /* thundershowers */
+.weather-46:before { content:"]"; } /* snow showers */
+.weather-47:before { content:"z"; } /* isolated thundershowers */	
