@@ -314,3 +314,75 @@ a [class^="weather-"], a [class*=" weather-"] {
 .weather-45:before { content:"z"; } /* thundershowers */
 .weather-46:before { content:"]"; } /* snow showers */
 .weather-47:before { content:"z"; } /* isolated thundershowers */	
+
+
+//#    /$$$$$$  /$$                     /$$      
+//#   /$$__  $$| $$                    | $$      
+//#  | $$  \__/| $$  /$$$$$$   /$$$$$$$| $$   /$$
+//#  | $$      | $$ /$$__  $$ /$$_____/| $$  /$$/
+//#  | $$      | $$| $$  \ $$| $$      | $$$$$$/ 
+//#  | $$    $$| $$| $$  | $$| $$      | $$_  $$ 
+//#  |  $$$$$$/| $$|  $$$$$$/|  $$$$$$$| $$ \  $$
+//#   \______/ |__/ \______/  \_______/|__/  \__/
+
+
+/*  --------------------------
+    Thanks, @Bluxart :: http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/
+    ----------------------- */
+.clock {
+	width:98%;
+	margin:0 auto 0 auto; 
+	padding: 0;
+	color:#fff;
+}
+
+#Date {
+	font-size: emCalc(30px);
+	text-align:center;
+	margin-top:10px;
+	display:block;
+	float:none; 
+	position:relative;
+}
+
+.clock ul { 
+	width:100%;
+	margin:0 auto !important;
+	padding:0 !important;
+	list-style:none;
+	text-align:center;
+	display:block;
+	line-height: 1.1;
+}
+.clock ul li { 
+	display:inline;
+	text-align:center;
+	font-size: emCalc(60px);
+	font-weight: normal;
+	margin:0;
+	padding: 0;
+	color:#fff;
+}
+
+#point { 
+	padding:0; 
+	position:relative;
+	display: inline;
+	-moz-animation:mymove 1s ease infinite;
+	-webkit-animation:mymove 1s ease infinite;
+}
+	/* Simple Animation */
+	@-webkit-keyframes mymove 
+	{
+	0% {opacity:.8; }
+	50% {opacity:.1; }
+	100% {opacity:.8;  }	
+	}
+	
+	@-moz-keyframes mymove 
+	{
+	0% {opacity:.8; }
+	50% {opacity:.1; }
+	100% {opacity:.8;  }	
+	}
+

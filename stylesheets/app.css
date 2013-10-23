@@ -5326,3 +5326,89 @@ li.post-box {
 }
 
 /* isolated thundershowers */
+/*  --------------------------
+    Thanks, @Bluxart :: http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/
+    ----------------------- */
+/* line 332, ../sass/app.scss */
+.clock {
+  width: 98%;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  color: #fff;
+}
+
+/* line 339, ../sass/app.scss */
+#Date {
+  font-size: 1.875em;
+  text-align: center;
+  margin-top: 10px;
+  display: block;
+  float: none;
+  position: relative;
+}
+
+/* line 348, ../sass/app.scss */
+.clock ul {
+  width: 100%;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  list-style: none;
+  text-align: center;
+  display: block;
+  line-height: 1.1;
+}
+
+/* line 357, ../sass/app.scss */
+.clock ul li {
+  display: inline;
+  text-align: center;
+  font-size: 3.75em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+/* line 367, ../sass/app.scss */
+#point {
+  padding: 0;
+  position: relative;
+  display: inline;
+  -moz-animation: mymove 1s ease infinite;
+  -webkit-animation: mymove 1s ease infinite;
+}
+
+/* Simple Animation */
+@-webkit-keyframes mymove {
+  /* line 377, ../sass/app.scss */
+  0% {
+    opacity: .8;
+  }
+
+  /* line 378, ../sass/app.scss */
+  50% {
+    opacity: .1;
+  }
+
+  /* line 379, ../sass/app.scss */
+  100% {
+    opacity: .8;
+  }
+}
+
+@-moz-keyframes mymove {
+  /* line 384, ../sass/app.scss */
+  0% {
+    opacity: .8;
+  }
+
+  /* line 385, ../sass/app.scss */
+  50% {
+    opacity: .1;
+  }
+
+  /* line 386, ../sass/app.scss */
+  100% {
+    opacity: .8;
+  }
+}

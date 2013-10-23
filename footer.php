@@ -45,6 +45,7 @@
 
     <script src="<?php bloginfo('template_url'); ?>/javascripts/foundation/foundation.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/javascripts/foundation/foundation.orbit.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/javascripts/vendor/app.js"></script>
 	
   
   <script>
