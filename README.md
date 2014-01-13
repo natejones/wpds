@@ -14,10 +14,7 @@ Drag a text widget into the Footer. Paste in the following:
 <?php
 
 	/*----------
-	Thank you, @chriscoyier! 
-	http://css-tricks.com/using-weather-data-to-change-your-websites-apperance-through-php-and-css/
-	
-	Line 11 parameters are w=YourWOEID and u=units (f or c)
+	$data parameters are w=YourWOEID and u=units (f or c)
 	Lookup your WOEID: http://woeid.rosselliot.co.nz/lookup/
 	----------*/
 
@@ -54,8 +51,8 @@ Drag a text widget into the Footer. Paste in the following:
 <span class="condition"><?php echo $condition; ?></span></div>
 	
 ```
-Set the weather location and other variables in weather.php.
-The javascript timer for the weather widget is in footer.php to allow it to find the correct path to weather.php.
+[thanks to @chriscoyier](http://css-tricks.com/using-weather-data-to-change-your-websites-apperance-through-php-and-css/)
+
 
 ###Clock
 Drag a text widget into the Footer. Paste in the following div:
