@@ -167,21 +167,41 @@ add_filter('widget_text','php_execute',100);
 
 
 
+
+
+
+//########################	
+//
+// COUNT THE WIDGETS
+//
+//########################
+function count_sidebar_widgets( $sidebar_id, $echo = true ) {
+    $the_sidebars = wp_get_sidebars_widgets();
+    if( !isset( $the_sidebars[$sidebar_id] ) )
+        return __( 'Invalid sidebar ID' );
+    if( $echo )
+        echo count( $the_sidebars[$sidebar_id] );
+    else
+        return count( $the_sidebars[$sidebar_id] );
+}
+$widget_count = (int) (12 / count_sidebar_widgets( 'dock', false ));
+
+
 //########################	
 //
 // CREATE DOCK WIDGET AREA
 //
 //########################
 $sidebars = array('Dock');
-foreach ($sidebars as $sidebar) {
-	register_sidebar(array('name'=> $sidebar,
-		'before_widget' => '<div class="large-3 columns">',
+foreach ($sidebars as $dock) {
+	register_sidebar(array('name'=> $dock,
+		'id' => 'dock',
+		'before_widget' => '<div class="large-' . $widget_count . ' columns">',
 		'after_widget' => '</div>',
 		'before_title' => '<h6>',
 		'after_title' => '</h6>'
 	));
 }
-
 
 	
 //###############	

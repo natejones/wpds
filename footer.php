@@ -14,6 +14,7 @@
 
 
 	<div class="row dock">
+
 <!--        <?php
         $args=array(
             'post_type' => 'dock',
@@ -46,13 +47,13 @@
     <script src="<?php bloginfo('template_url'); ?>/javascripts/foundation/foundation.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/javascripts/foundation/foundation.orbit.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/javascripts/vendor/app.js"></script>
-	
+    <script src="<?php bloginfo('template_url'); ?>/javascripts/twitterFetcher_v10_min.js"></script>
   
   <script>
 $(function() {
     $(document).foundation();
 });
-
+    twitterFetcher.fetch('393025966789754880', 'tweets', 2, true);
   </script>
 </body>
 </html>
