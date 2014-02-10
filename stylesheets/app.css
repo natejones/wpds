@@ -4971,11 +4971,11 @@ li.post-box {
     background: rgba(79, 75, 75, 0.62);
     position: relative;
     display: block;
-    height: 200px;
+    height: 50%;
     width: 100%;
   }
 
-  /* line 202, ../sass/app.scss */
+  /* line 203, ../sass/app.scss */
   .dock .columns {
     border-right: 1px solid rgba(255, 255, 255, 0.4);
     display: inline-block;
@@ -4984,42 +4984,51 @@ li.post-box {
     color: #fff;
   }
 
-  /* line 209, ../sass/app.scss */
+  /* line 210, ../sass/app.scss */
   .dock .columns:last-child {
     border-right: none;
   }
 
-  /* line 212, ../sass/app.scss */
+  /* line 213, ../sass/app.scss */
   .dock h6 {
     color: #ffffff;
   }
 }
-/* line 226, ../sass/app.scss */
+/* line 227, ../sass/app.scss */
 .icon {
-  font-size: 12.5em;
-  float: left;
-  display: inline;
-  margin: -5% 0 0 0;
-}
-
-/* line 232, ../sass/app.scss */
-.conditions {
-  float: right;
-  display: inline;
-  margin: 16px 46px 0 0;
+  overflow: hidden;
+  font-size: 12rem;
   text-align: left;
+  padding: 0 0 0 1rem !important;
+  margin-top: -7%;
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 50%;
+  float: left;
 }
 
-/* line 238, ../sass/app.scss */
+/* line 236, ../sass/app.scss */
+.conditions {
+  text-align: left;
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 50%;
+  float: left;
+  padding-top: 2rem;
+}
+
+/* line 242, ../sass/app.scss */
 .temperature {
-  font-size: 5em;
+  font-size: 4.5rem;
   display: block;
   line-height: 1.1;
 }
 
-/* line 243, ../sass/app.scss */
+/* line 248, ../sass/app.scss */
 .condition {
-  font-size: 1.875em;
+  font-size: 2rem;
   display: block;
   line-height: 1.3;
 }
@@ -5034,294 +5043,294 @@ li.post-box {
 
 /*  Climacons styles
     ------------------------------------------------------- */
-/* line 261, ../sass/app.scss */
+/* line 267, ../sass/app.scss */
 [class^="weather-"]:before, [class*=" weather-"]:before {
   font-family: 'ClimaconsRegular';
 }
 
-/* line 269, ../sass/app.scss */
+/* line 275, ../sass/app.scss */
 .weather-0:before {
   content: "(";
 }
 
 /* tornado */
-/* line 270, ../sass/app.scss */
+/* line 276, ../sass/app.scss */
 .weather-1:before {
   content: "";
 }
 
 /* tropical storm */
-/* line 271, ../sass/app.scss */
+/* line 277, ../sass/app.scss */
 .weather-2:before {
   content: "(";
 }
 
 /* hurricane */
-/* line 272, ../sass/app.scss */
+/* line 278, ../sass/app.scss */
 .weather-3:before {
   content: "z";
 }
 
 /* severe thunderstorms */
-/* line 273, ../sass/app.scss */
+/* line 279, ../sass/app.scss */
 .weather-4:before {
   content: "z";
 }
 
 /* thunderstorms */
-/* line 274, ../sass/app.scss */
+/* line 280, ../sass/app.scss */
 .weather-5:before {
   content: "y";
 }
 
 /* mixed rain and snow */
-/* line 275, ../sass/app.scss */
+/* line 281, ../sass/app.scss */
 .weather-6:before {
   content: "y";
 }
 
 /* mixed rain and sleet */
-/* line 276, ../sass/app.scss */
+/* line 282, ../sass/app.scss */
 .weather-7:before {
   content: "y";
 }
 
 /* mixed snow and sleet */
-/* line 277, ../sass/app.scss */
+/* line 283, ../sass/app.scss */
 .weather-8:before {
   content: "e";
 }
 
 /* freezing drizzle */
-/* line 278, ../sass/app.scss */
+/* line 284, ../sass/app.scss */
 .weather-9:before {
   content: "o";
 }
 
 /* drizzle */
-/* line 279, ../sass/app.scss */
+/* line 285, ../sass/app.scss */
 .weather-10:before {
   content: "e";
 }
 
 /* freezing rain */
-/* line 280, ../sass/app.scss */
+/* line 286, ../sass/app.scss */
 .weather-11:before {
   content: "6";
 }
 
 /* showers */
-/* line 281, ../sass/app.scss */
+/* line 287, ../sass/app.scss */
 .weather-12:before {
   content: "6";
 }
 
 /* showers */
-/* line 282, ../sass/app.scss */
+/* line 288, ../sass/app.scss */
 .weather-13:before {
   content: "]";
 }
 
 /* snow flurries */
-/* line 283, ../sass/app.scss */
+/* line 289, ../sass/app.scss */
 .weather-14:before {
   content: "]";
 }
 
 /* light snow showers */
-/* line 284, ../sass/app.scss */
+/* line 290, ../sass/app.scss */
 .weather-15:before {
   content: "]";
 }
 
 /* blowing snow */
-/* line 285, ../sass/app.scss */
+/* line 291, ../sass/app.scss */
 .weather-16:before {
   content: "]";
 }
 
 /* snow */
-/* line 286, ../sass/app.scss */
+/* line 292, ../sass/app.scss */
 .weather-17:before {
   content: "o";
 }
 
 /* hail */
-/* line 287, ../sass/app.scss */
+/* line 293, ../sass/app.scss */
 .weather-18:before {
   content: "o";
 }
 
 /* sleet */
-/* line 288, ../sass/app.scss */
+/* line 294, ../sass/app.scss */
 .weather-19:before {
   content: "g";
 }
 
 /* dust */
-/* line 289, ../sass/app.scss */
+/* line 295, ../sass/app.scss */
 .weather-20:before {
   content: "g";
 }
 
 /* foggy */
-/* line 290, ../sass/app.scss */
+/* line 296, ../sass/app.scss */
 .weather-21:before {
   content: "g";
 }
 
 /* haze */
-/* line 291, ../sass/app.scss */
+/* line 297, ../sass/app.scss */
 .weather-22:before {
   content: "g";
 }
 
 /* smoky */
-/* line 292, ../sass/app.scss */
+/* line 298, ../sass/app.scss */
 .weather-23:before {
   content: "k";
 }
 
 /* blustery */
-/* line 293, ../sass/app.scss */
+/* line 299, ../sass/app.scss */
 .weather-24:before {
   content: "k";
 }
 
 /* windy */
-/* line 294, ../sass/app.scss */
+/* line 300, ../sass/app.scss */
 .weather-25:before {
   content: "-";
 }
 
 /* cold */
-/* line 295, ../sass/app.scss */
+/* line 301, ../sass/app.scss */
 .weather-26:before {
   content: "`";
 }
 
 /* cloudy */
-/* line 296, ../sass/app.scss */
+/* line 302, ../sass/app.scss */
 .weather-27:before {
   content: "2";
 }
 
 /* mostly cloudy (night) */
-/* line 297, ../sass/app.scss */
+/* line 303, ../sass/app.scss */
 .weather-28:before {
   content: "1";
 }
 
 /* mostly cloudy (day) */
-/* line 298, ../sass/app.scss */
+/* line 304, ../sass/app.scss */
 .weather-29:before {
   content: "2";
 }
 
 /* partly cloudy (night) */
-/* line 299, ../sass/app.scss */
+/* line 305, ../sass/app.scss */
 .weather-30:before {
   content: "1";
 }
 
 /* partly cloudy (day) */
-/* line 300, ../sass/app.scss */
+/* line 306, ../sass/app.scss */
 .weather-31:before {
   content: "/";
 }
 
 /* clear (night) */
-/* line 301, ../sass/app.scss */
+/* line 307, ../sass/app.scss */
 .weather-32:before {
   content: "v";
 }
 
 /* sunny */
-/* line 302, ../sass/app.scss */
+/* line 308, ../sass/app.scss */
 .weather-33:before {
   content: "/";
 }
 
 /* fair (night) */
-/* line 303, ../sass/app.scss */
+/* line 309, ../sass/app.scss */
 .weather-34:before {
   content: "v";
 }
 
 /* fair (day) */
-/* line 304, ../sass/app.scss */
+/* line 310, ../sass/app.scss */
 .weather-35:before {
   content: "e";
 }
 
 /* mixed rain and hail */
-/* line 305, ../sass/app.scss */
+/* line 311, ../sass/app.scss */
 .weather-36:before {
   content: "E";
 }
 
 /* hot */
-/* line 306, ../sass/app.scss */
+/* line 312, ../sass/app.scss */
 .weather-37:before {
   content: "z";
 }
 
 /* isolated thunderstorms */
-/* line 307, ../sass/app.scss */
+/* line 313, ../sass/app.scss */
 .weather-38:before {
   content: "z";
 }
 
 /* scattered thunderstorms */
-/* line 308, ../sass/app.scss */
+/* line 314, ../sass/app.scss */
 .weather-39:before {
   content: "z";
 }
 
 /* scattered thunderstorms */
-/* line 309, ../sass/app.scss */
+/* line 315, ../sass/app.scss */
 .weather-40:before {
   content: "6";
 }
 
 /* scattered showers */
-/* line 310, ../sass/app.scss */
+/* line 316, ../sass/app.scss */
 .weather-41:before {
   content: "]";
 }
 
 /* heavy snow */
-/* line 311, ../sass/app.scss */
+/* line 317, ../sass/app.scss */
 .weather-42:before {
   content: "]";
 }
 
 /* scattered snow showers */
-/* line 312, ../sass/app.scss */
+/* line 318, ../sass/app.scss */
 .weather-43:before {
   content: "]";
 }
 
 /* heavy snow */
-/* line 313, ../sass/app.scss */
+/* line 319, ../sass/app.scss */
 .weather-44:before {
   content: "`";
 }
 
 /* partly cloudy */
-/* line 314, ../sass/app.scss */
+/* line 320, ../sass/app.scss */
 .weather-45:before {
   content: "z";
 }
 
 /* thundershowers */
-/* line 315, ../sass/app.scss */
+/* line 321, ../sass/app.scss */
 .weather-46:before {
   content: "]";
 }
 
 /* snow showers */
-/* line 316, ../sass/app.scss */
+/* line 322, ../sass/app.scss */
 .weather-47:before {
   content: "z";
 }
@@ -5330,7 +5339,7 @@ li.post-box {
 /*  --------------------------
     Thanks, @Bluxart :: http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/
     ----------------------- */
-/* line 332, ../sass/app.scss */
+/* line 338, ../sass/app.scss */
 .clock {
   width: 98%;
   margin: 0 auto 0 auto;
@@ -5338,7 +5347,7 @@ li.post-box {
   color: #fff;
 }
 
-/* line 339, ../sass/app.scss */
+/* line 345, ../sass/app.scss */
 #Date {
   font-size: 1.875em;
   text-align: center;
@@ -5348,7 +5357,7 @@ li.post-box {
   position: relative;
 }
 
-/* line 348, ../sass/app.scss */
+/* line 354, ../sass/app.scss */
 .clock ul {
   width: 100%;
   margin: 0 auto !important;
@@ -5359,20 +5368,21 @@ li.post-box {
   line-height: 1.1;
 }
 
-/* line 357, ../sass/app.scss */
+/* line 363, ../sass/app.scss */
 .clock ul li {
   display: inline;
   text-align: center;
-  font-size: 3.75em;
+  font-size: 6rem;
   font-weight: normal;
   margin: 0;
   padding: 0;
   color: #fff;
 }
 
-/* line 367, ../sass/app.scss */
+/* line 374, ../sass/app.scss */
 #point {
   padding: 0;
+  font-size: 7rem;
   position: relative;
   display: inline;
   -moz-animation: mymove 1s ease infinite;
@@ -5381,35 +5391,89 @@ li.post-box {
 
 /* Simple Animation */
 @-webkit-keyframes mymove {
-  /* line 377, ../sass/app.scss */
+  /* line 385, ../sass/app.scss */
   0% {
     opacity: .8;
   }
 
-  /* line 378, ../sass/app.scss */
+  /* line 386, ../sass/app.scss */
   50% {
     opacity: .1;
   }
 
-  /* line 379, ../sass/app.scss */
+  /* line 387, ../sass/app.scss */
   100% {
     opacity: .8;
   }
 }
 
 @-moz-keyframes mymove {
-  /* line 384, ../sass/app.scss */
+  /* line 392, ../sass/app.scss */
   0% {
     opacity: .8;
   }
 
-  /* line 385, ../sass/app.scss */
+  /* line 393, ../sass/app.scss */
   50% {
     opacity: .1;
   }
 
-  /* line 386, ../sass/app.scss */
+  /* line 394, ../sass/app.scss */
   100% {
     opacity: .8;
   }
+}
+
+/* line 408, ../sass/app.scss */
+div.user {
+  font-size: 1rem;
+}
+
+/* line 411, ../sass/app.scss */
+div.user span {
+  padding: 0 0 0 1.6rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* line 416, ../sass/app.scss */
+div.user span:before {
+  content: '';
+  background: url("../images/twitter.svg");
+  height: 40px;
+  width: 40px;
+  display: block;
+  position: absolute;
+  top: 1.4rem;
+  left: 1rem;
+  z-index: 99;
+}
+
+/* line 428, ../sass/app.scss */
+div.user img {
+  display: none;
+}
+
+/* line 432, ../sass/app.scss */
+div.user span span {
+  display: none;
+}
+
+/* line 433, ../sass/app.scss */
+p.tweet {
+  margin-top: .3rem;
+  font-size: 1.2rem;
+}
+
+/* line 437, ../sass/app.scss */
+p.tweet a {
+  font-size: 1rem;
+  color: #ededed;
+  font-style: italic;
+  border-bottom: dotted 1px #ededed;
+}
+
+/* line 443, ../sass/app.scss */
+p.interact {
+  display: none;
 }
