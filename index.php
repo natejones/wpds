@@ -30,7 +30,7 @@ get_header(); ?>
 						'<h2 style="color:#' . get_post_meta($post->ID, '_digitalsign_h2color', true) . ';">' . get_post_meta($post->ID, '_digitalsign_subtitle', true) . '</h2>',
 						'<div class="row">',
 						'<a href="http://' . get_post_meta($post->ID, '_digitalsign_link', true) . '">',
-						get_the_post_thumbnail($post_id, 'thumbnail', array('class' => 'large-3 columns feature')),
+						get_the_post_thumbnail($post_id, 'large', array('class' => 'large-3 columns feature')),
 						'</a>',
 						'<p class="large-7 columns copy end" style="color:#' . get_post_meta($post->ID, '_digitalsign_pcolor', true) . ';">' . get_the_content() . '</p>',
 						'<p class="link"><a  style="color:#' . get_post_meta($post->ID, '_digitalsign_pcolor', true) . ';" href="http://' . get_post_meta($post->ID, '_digitalsign_link', true) . '">' . get_post_meta($post->ID, '_digitalsign_link', true) . '</a>',
