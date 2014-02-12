@@ -20,7 +20,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width" />
 	<title><?php bloginfo('name'); ?></title>
-  
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>  
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/normalize.css">
 	
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/app.css">

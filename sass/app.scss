@@ -83,19 +83,22 @@ h1, h2, h3, h4, h5, h6, p, li, a {
 h1 { 
 	text-align: left;
 	font-size: emCalc(24px);
+	line-height: 1.2;
 }
 
 h2 { 
 	font-size: emCalc(16px);
-	margin-top: 0;
 	margin-bottom: .8em;
 	text-transform: uppercase;
+	margin-top: .8em;
+	font-weight: 400;
 }
 p {
 	padding-top: 0;
 	margin-top: 0;
 	line-height: 1.4;
 	font-size: emCalc(14px);
+	font-weight: 100;
 }
 p.link  {
 	margin-top: 1em;
@@ -103,7 +106,7 @@ p.link  {
 }
 @media #{$small} { 
 	h1 { font-size: emCalc(80px); }
-	h2 { font-size: emCalc(34px); }
+	h2 { font-size: emCalc(34px); margin-top: 0; }
 	p { font-size: emCalc(24px); }
 	.copy { margin-left: 1em; }
 	p.link  {
@@ -230,14 +233,14 @@ li.post-box {
 	font-size: 12rem;
 	text-align: left;
 	padding: 0 0 0 1rem !important;
-	margin-top: -7%;
+	margin-top: -3%;
 	@include grid-column(6); 
 }
 .conditions {
 	//margin: 16px 46px 0 0;
 	text-align: left;
 	@include grid-column(6); 
-	padding-top: 2rem;
+	padding-top: 0;
 }
 .temperature {
 	//font-size: emCalc(80px);
