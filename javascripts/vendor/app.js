@@ -1,5 +1,9 @@
 jQuery(document).ready(function ($) {
 
+/* REFRESH PAGE EVERY FIVE MINUTES ---- */
+window.setTimeout('location.reload(true)', 300000);
+/* /REFRESH PAGE EVERY FIVE MINUTES ---- */
+
 	/* CLOCK ---------------------------------
     thanks to @Bluxart :: http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/
 
