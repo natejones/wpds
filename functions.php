@@ -163,6 +163,7 @@ ob_end_clean();
 return $html;
 }
 add_filter('widget_text','php_execute',100);
+add_filter('get_the_content','php_execute',100);
 
 
 
@@ -184,8 +185,13 @@ function count_sidebar_widgets( $sidebar_id, $echo = true ) {
     else
         return count( $the_sidebars[$sidebar_id] );
 }
-$widget_count = (int) (12 / count_sidebar_widgets( 'dock', false ));
-
+//$widget_count = (int) (12 / count_sidebar_widgets( 'dock', false ));
+	if (count_sidebar_widgets( 'dock', false ) > 0){
+		$widget_count = (int) (12 / count_sidebar_widgets( 'dock', false ));
+	}
+	else {
+		$widget_count = 1;
+	}
 
 //########################	
 //
