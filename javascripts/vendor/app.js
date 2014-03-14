@@ -54,3 +54,13 @@ setInterval( function() {
 	$("#hours").html(hours);
     }, 1000);
 });
+
+$( ".dock .columns .textwidget div" ).has( "" ).css( "background-color", "red" );
+
+
+
+if ($('.dock > .columns > .textwidget > div > h6:contains(" double")')) {
+	$('.dock > .columns > .textwidget')
+     return htm.replace(" double", "");
+     
+});
