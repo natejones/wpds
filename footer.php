@@ -43,6 +43,7 @@ $(function() {
     $(document).foundation();
 });
 
+
     twitterFetcher.fetch('393025966789754880', 'tweets', 1, true, true, false);
   </script>
 </body>
