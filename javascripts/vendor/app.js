@@ -63,4 +63,4 @@ if ($('.dock > .columns > .textwidget > div > h6:contains(" double")')) {
 	$('.dock > .columns > .textwidget')
      return htm.replace(" double", "");
      
-});
+};
