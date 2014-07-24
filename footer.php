@@ -35,9 +35,8 @@
 		  document.write(unescape("%3Cscript src='<?php bloginfo('template_url'); ?>/javascripts/foundation/foundation.orbit.js' type='text/javascript'%3E%3C/script%3E"));
 		}
 	</script>
-    <script src="<?php bloginfo('template_url'); ?>/javascripts/vendor/app-ck.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/javascripts/vendor/app.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/javascripts/vendor/twitterFetcher_v10_min.js"></script>
-	<script src="http://a.vimeocdn.com/js/froogaloop2.min.js"/></script>
   
   <script>
 $(function() {

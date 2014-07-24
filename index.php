@@ -10,12 +10,10 @@
  */
 
 get_header(); ?>
-
 <div class="row">
     <!-- Main Content -->
     <div class="large-12 columns" role="content">
-			<ul id="feature" data-orbit data-options="pause_on_hover:true;navigation_arrows: true;">
-
+			<ul data-orbit>
 	            <?php
 	            $args=array(
 	                'post_type' => 'post',
@@ -33,7 +31,7 @@ get_header(); ?>
 						'<a href="http://' . get_post_meta($post->ID, '_digitalsign_link', true) . '">',
 						get_the_post_thumbnail($post_id, 'large', array('class' => 'large-3 columns feature')),
 						'</a>',
-						'<p class="large-7 columns copy end" style="color:#' . get_post_meta($post->ID, '_digitalsign_pcolor', true) . ';">' . get_the_content() . '</p>',
+						'<p class="large-7 columns copy end" style="color:#' . get_post_meta($post->ID, '_digitalsign_pcolor', true) . ';">' . do_shortcode( get_the_content() ) . '</p>',
 						'<p class="link"><a  style="color:#' . get_post_meta($post->ID, '_digitalsign_pcolor', true) . ';" href="http://' . get_post_meta($post->ID, '_digitalsign_link', true) . '">' . get_post_meta($post->ID, '_digitalsign_link', true) . '</a>',
 						'</div>',
 						'</li>';

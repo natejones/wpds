@@ -356,6 +356,16 @@ function digitalsign_save_data($post_id) {
  
 //***********************
 // 
+// SHORTCODES
+// 
+//***********************
+ 
+//wp_oembed_add_provider( '#https://(www\.)?youtube\.com/watch.*#i', 'http://www.youtube.com/oembed', true );
+
+
+
+//***********************
+// 
 // CUSTOM LOGIN LOGO
 // 
 //***********************
