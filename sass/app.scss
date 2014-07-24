@@ -30,7 +30,7 @@
 // @import "foundation/components/section";
 // @import "foundation/components/top-bar";  // *requires components/grid
 // @import "foundation/components/orbit";
- @import "foundation/components/reveal";
+// @import "foundation/components/reveal";
 // @import "foundation/components/joyride";
 // @import "foundation/components/clearing";
 // @import "foundation/components/alert-boxes";
@@ -141,11 +141,11 @@ li.post-box {
 	height: 100%;
 	min-height: 100%;
 }
-.orbit-prev, .orbit-next, .orbit-slide-number {
+/*.orbit-prev, .orbit-next, .orbit-slide-number {
 	display: none;
 	height: 0;
 	width: 0;
-}
+}*/
 .dock { display: none; }
 	@media #{$medium} { 
 

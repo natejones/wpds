@@ -9,9 +9,9 @@
     version: '4.1.0',
 
     settings: {
-      timer_speed: 10000,
+      timer_speed: 7000,
       animation_speed: 500,
-      bullets: true,
+      bullets: false,
       stack_on_small: true,
       navigation_arrows: true,
       slide_number: true,

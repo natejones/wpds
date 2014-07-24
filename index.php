@@ -14,7 +14,8 @@ get_header(); ?>
 <div class="row">
     <!-- Main Content -->
     <div class="large-12 columns" role="content">
-			<ul data-orbit>
+			<ul id="feature" data-orbit data-options="pause_on_hover:true;navigation_arrows: true;">
+
 	            <?php
 	            $args=array(
 	                'post_type' => 'post',
