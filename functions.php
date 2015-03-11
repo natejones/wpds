@@ -362,7 +362,7 @@ function my_theme_register_required_plugins() {
         array(
             'name'      => 'Simple expires',
             'slug'      => 'simple-expires',
-            'required'  => true,
+            'required'  => false,
         ),
         array(
             'name'      => 'WordPress Database Backup',
