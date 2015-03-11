@@ -9,12 +9,12 @@
     version: '4.1.0',
 
     settings: {
-      timer_speed: 7000,
+      timer_speed: 8000,
       animation_speed: 500,
       bullets: false,
       stack_on_small: true,
-      navigation_arrows: true,
-      slide_number: true,
+      navigation_arrows: false,
+      slide_number: false,
       container_class: 'orbit-container',
       stack_on_small_class: 'orbit-stack-on-small',
       next_class: 'orbit-next',
@@ -96,7 +96,7 @@
           $slides_container = $(slider),
           $container = $slides_container.wrap(self._container_html()).parent(),
           $slides = $slides_container.children();
-      
+
       $.extend(true, self.settings, self.data_options($slides_container));
 
       if (self.settings.navigation_arrows) {

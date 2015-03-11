@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -2715,6 +2714,94 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   content: "\f18b";
 }
 
+@font-face {
+  font-family: 'ClimaconsRegular';
+  src: url("../font/climacons-webfont.eot");
+  src: url("../font/climacons-webfont.eot?#iefix") format("embedded-opentype"), url("../font/climacons-webfont.woff") format("woff"), url("../font/climacons-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ortodoxasemibold_italic';
+  src: url("../font/monograma_-_ortodoxa-semibolditalic-webfont.eot");
+  src: url("../font/monograma_-_ortodoxa-semibolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../font/monograma_-_ortodoxa-semibolditalic-webfont.woff2") format("woff2"), url("../font/monograma_-_ortodoxa-semibolditalic-webfont.woff") format("woff"), url("../font/monograma_-_ortodoxa-semibolditalic-webfont.ttf") format("truetype"), url("../font/monograma_-_ortodoxa-semibolditalic-webfont.svg#ortodoxasemibold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ortodoxabold_italic';
+  src: url("../font/monograma_-_ortodoxa-mediumitalic-webfont.eot");
+  src: url("../font/monograma_-_ortodoxa-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../font/monograma_-_ortodoxa-mediumitalic-webfont.woff2") format("woff2"), url("../font/monograma_-_ortodoxa-mediumitalic-webfont.woff") format("woff"), url("../font/monograma_-_ortodoxa-mediumitalic-webfont.ttf") format("truetype"), url("../font/monograma_-_ortodoxa-mediumitalic-webfont.svg#ortodoxabold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ortodoxaregular';
+  src: url("../font/monograma_-_ortodoxa-regular-webfont.eot");
+  src: url("../font/monograma_-_ortodoxa-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/monograma_-_ortodoxa-regular-webfont.woff2") format("woff2"), url("../font/monograma_-_ortodoxa-regular-webfont.woff") format("woff"), url("../font/monograma_-_ortodoxa-regular-webfont.ttf") format("truetype"), url("../font/monograma_-_ortodoxa-regular-webfont.svg#ortodoxaregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ortodoxasemibold';
+  src: url("../font/monograma_-_ortodoxa-semibold-webfont.eot");
+  src: url("../font/monograma_-_ortodoxa-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/monograma_-_ortodoxa-semibold-webfont.woff2") format("woff2"), url("../font/monograma_-_ortodoxa-semibold-webfont.woff") format("woff"), url("../font/monograma_-_ortodoxa-semibold-webfont.ttf") format("truetype"), url("../font/monograma_-_ortodoxa-semibold-webfont.svg#ortodoxasemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ortodoxabold';
+  src: url("../font/monograma_-_ortodoxa-medium-webfont.eot");
+  src: url("../font/monograma_-_ortodoxa-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../font/monograma_-_ortodoxa-medium-webfont.woff2") format("woff2"), url("../font/monograma_-_ortodoxa-medium-webfont.woff") format("woff"), url("../font/monograma_-_ortodoxa-medium-webfont.ttf") format("truetype"), url("../font/monograma_-_ortodoxa-medium-webfont.svg#ortodoxabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ortodoxalight_italic';
+  src: url("../font/monograma_-_ortodoxa-lightitalic-webfont.eot");
+  src: url("../font/monograma_-_ortodoxa-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../font/monograma_-_ortodoxa-lightitalic-webfont.woff2") format("woff2"), url("../font/monograma_-_ortodoxa-lightitalic-webfont.woff") format("woff"), url("../font/monograma_-_ortodoxa-lightitalic-webfont.ttf") format("truetype"), url("../font/monograma_-_ortodoxa-lightitalic-webfont.svg#ortodoxalight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ortodoxaitalic';
+  src: url("../font/monograma_-_ortodoxa-italic-webfont.eot");
+  src: url("../font/monograma_-_ortodoxa-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../font/monograma_-_ortodoxa-italic-webfont.woff2") format("woff2"), url("../font/monograma_-_ortodoxa-italic-webfont.woff") format("woff"), url("../font/monograma_-_ortodoxa-italic-webfont.ttf") format("truetype"), url("../font/monograma_-_ortodoxa-italic-webfont.svg#ortodoxaitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ortodoxalight';
+  src: url("../font/monograma_-_ortodoxa-light-webfont.eot");
+  src: url("../font/monograma_-_ortodoxa-light-webfont.eot?#iefix") format("embedded-opentype"), url("../font/monograma_-_ortodoxa-light-webfont.woff2") format("woff2"), url("../font/monograma_-_ortodoxa-light-webfont.woff") format("woff"), url("../font/monograma_-_ortodoxa-light-webfont.ttf") format("truetype"), url("../font/monograma_-_ortodoxa-light-webfont.svg#ortodoxalight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ortodoxa_semiboldbold_italic';
+  src: url("../font/monograma_-_ortodoxa-bolditalic-webfont.eot");
+  src: url("../font/monograma_-_ortodoxa-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../font/monograma_-_ortodoxa-bolditalic-webfont.woff2") format("woff2"), url("../font/monograma_-_ortodoxa-bolditalic-webfont.woff") format("woff"), url("../font/monograma_-_ortodoxa-bolditalic-webfont.ttf") format("truetype"), url("../font/monograma_-_ortodoxa-bolditalic-webfont.svg#ortodoxa_semiboldbold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ortodoxa_semiboldbold';
+  src: url("../font/monograma_-_ortodoxa-bold-webfont.eot");
+  src: url("../font/monograma_-_ortodoxa-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/monograma_-_ortodoxa-bold-webfont.woff2") format("woff2"), url("../font/monograma_-_ortodoxa-bold-webfont.woff") format("woff"), url("../font/monograma_-_ortodoxa-bold-webfont.ttf") format("truetype"), url("../font/monograma_-_ortodoxa-bold-webfont.svg#ortodoxa_semiboldbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* line 264, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_global.scss */
 meta.foundation-mq-small {
   font-family: "only screen and (min-width: 768px)";
@@ -2751,7 +2838,7 @@ body {
 /* line 300, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_global.scss */
 body {
   background: white;
-  color: #444444;
+  color: #04151a;
   padding: 0;
   margin: 0;
   font-family: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -3466,13 +3553,13 @@ td {
 /* Default Link Styles */
 /* line 152, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_type.scss */
 a {
-  color: #3398af;
+  color: #772b2b;
   text-decoration: none;
   line-height: inherit;
 }
 /* line 158, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_type.scss */
 a:hover, a:focus {
-  color: #2d879b;
+  color: #642424;
 }
 /* line 160, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_type.scss */
 a img {
@@ -3658,7 +3745,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #444444;
+  color: #04151a;
   border-bottom: 1px dotted #dddddd;
   cursor: help;
 }
@@ -3880,13 +3967,13 @@ button, .button {
   padding-bottom: 0.8125em;
   padding-left: 1.5em;
   font-size: 1em;
-  background-color: #3398af;
-  border-color: #277688;
+  background-color: #772b2b;
+  border-color: #521d1d;
   color: white;
 }
 /* line 122, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_buttons.scss */
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #277688;
+  background-color: #521d1d;
 }
 /* line 133, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_buttons.scss */
 button:hover, button:focus, .button:hover, .button:focus {
@@ -3894,13 +3981,13 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 /* line 176, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_buttons.scss */
 button.secondary, .button.secondary {
-  background-color: #945b99;
-  border-color: #754879;
+  background-color: #c6a976;
+  border-color: #b79252;
   color: white;
 }
 /* line 122, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_buttons.scss */
 button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-  background-color: #754879;
+  background-color: #b79252;
 }
 /* line 133, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_buttons.scss */
 button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
@@ -3976,8 +4063,8 @@ button.right-align, .button.right-align {
 }
 /* line 188, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_buttons.scss */
 button.disabled, button[disabled], .button.disabled, .button[disabled] {
-  background-color: #3398af;
-  border-color: #277688;
+  background-color: #772b2b;
+  border-color: #521d1d;
   color: white;
   cursor: default;
   opacity: 0.6;
@@ -3986,7 +4073,7 @@ button.disabled, button[disabled], .button.disabled, .button[disabled] {
 }
 /* line 122, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #277688;
+  background-color: #521d1d;
 }
 /* line 133, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
@@ -3994,12 +4081,12 @@ button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[dis
 }
 /* line 146, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #3398af;
+  background-color: #772b2b;
 }
 /* line 189, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_buttons.scss */
 button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
-  background-color: #945b99;
-  border-color: #754879;
+  background-color: #c6a976;
+  border-color: #b79252;
   color: white;
   cursor: default;
   opacity: 0.6;
@@ -4008,7 +4095,7 @@ button.disabled.secondary, button[disabled].secondary, .button.disabled.secondar
 }
 /* line 122, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_buttons.scss */
 button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-  background-color: #754879;
+  background-color: #b79252;
 }
 /* line 133, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_buttons.scss */
 button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
@@ -4016,7 +4103,7 @@ button.disabled.secondary:hover, button.disabled.secondary:focus, button[disable
 }
 /* line 146, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_buttons.scss */
 button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-  background-color: #945b99;
+  background-color: #c6a976;
 }
 /* line 190, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_buttons.scss */
 button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
@@ -4723,13 +4810,12 @@ html, body {
   height: 200px;
 }
 
-/* line 58, ../sass/app.scss */
- 
+/* line 59, ../sass/app.scss */
 body, .columns, .column {
   padding: 0;
 }
 
-/* line 76, ../sass/app.scss */
+/* line 77, ../sass/app.scss */
 h1, h2, h3, h4, h5, h6, p, li, a {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -4745,32 +4831,29 @@ h1, h2, h3, h4, h5, h6, p, li, a {
   transition-timing-function: ease-in;
 }
 
-/* line 83, ../sass/app.scss */
+/* line 84, ../sass/app.scss */
 h1 {
   text-align: left;
-  font-size: 1.5em;
   line-height: 1.2;
 }
 
-/* line 89, ../sass/app.scss */
+/* line 90, ../sass/app.scss */
 h2 {
-  font-size: 1em;
   margin-bottom: .8em;
   text-transform: uppercase;
   margin-top: .8em;
   font-weight: 400;
 }
 
-/* line 96, ../sass/app.scss */
+/* line 97, ../sass/app.scss */
 p {
   padding-top: 0;
   margin-top: 0;
   line-height: 1.4;
-  font-size: 0.875em;
   font-weight: 100;
 }
 
-/* line 103, ../sass/app.scss */
+/* line 104, ../sass/app.scss */
 p.link {
   margin-top: 1em;
   position: relative;
@@ -4781,33 +4864,33 @@ p.link {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 108, ../sass/app.scss */
+  /* line 109, ../sass/app.scss */
   h1 {
     font-size: 5em;
   }
 
-  /* line 109, ../sass/app.scss */
+  /* line 110, ../sass/app.scss */
   h2 {
     font-size: 2.125em;
     margin-top: 0;
   }
 
-  /* line 110, ../sass/app.scss */
+  /* line 111, ../sass/app.scss */
   p {
     font-size: 1.5em;
   }
 
-  /* line 111, ../sass/app.scss */
+  /* line 112, ../sass/app.scss */
   .copy {
     margin-left: 1em;
   }
 
-  /* line 112, ../sass/app.scss */
+  /* line 113, ../sass/app.scss */
   p.link {
     display: none;
   }
 }
-/* line 138, ../sass/app.scss */
+/* line 139, ../sass/app.scss */
 li.post-box {
   padding: 20px;
   display: inline-block;
@@ -4820,25 +4903,25 @@ li.post-box {
 	height: 0;
 	width: 0;
 }*/
-/* line 149, ../sass/app.scss */
+/* line 150, ../sass/app.scss */
 .dock {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 161, ../sass/app.scss */
+  /* line 162, ../sass/app.scss */
   *, html, body {
     max-height: 100%;
     overflow: hidden;
   }
 
-  /* line 165, ../sass/app.scss */
+  /* line 166, ../sass/app.scss */
   .orbit-slides-container {
     height: 100%;
     min-height: 100%;
   }
 
-  /* line 169, ../sass/app.scss */
+  /* line 170, ../sass/app.scss */
   li.post-box {
     height: 100%;
     min-height: 100vh;
@@ -4847,12 +4930,12 @@ li.post-box {
     overflow: hidden;
   }
 
-  /* line 176, ../sass/app.scss */
+  /* line 177, ../sass/app.scss */
   img.feature {
     margin-left: 1em;
   }
 
-  /* line 181, ../sass/app.scss */
+  /* line 182, ../sass/app.scss */
   .page-wrap {
     min-height: 100%;
     /* equal to footer height */
@@ -4860,14 +4943,14 @@ li.post-box {
     padding-bottom: 0;
   }
 
-  /* line 187, ../sass/app.scss */
+  /* line 188, ../sass/app.scss */
   .page-wrap:after {
     content: "";
     display: block;
     padding-bottom: 0;
   }
 
-  /* line 192, ../sass/app.scss */
+  /* line 193, ../sass/app.scss */
   .footer, .page-wrap:after {
     /* .push must be the same height as footer */
     height: 215px;
@@ -4875,35 +4958,55 @@ li.post-box {
     margin: 0;
   }
 
-  /* line 198, ../sass/app.scss */
+  /* line 199, ../sass/app.scss */
   .dock {
-    background: rgba(79, 75, 75, 0.62);
+    background: rgba(79, 75, 75, 0.43);
     position: relative;
     display: block;
     height: 50%;
     width: 100%;
   }
 
-  /* line 206, ../sass/app.scss */
+  /* line 207, ../sass/app.scss */
   .dock .columns {
     border-right: 1px solid rgba(255, 255, 255, 0.4);
     display: inline-block;
     height: 100%;
-    padding: 1em;
+    padding: .3em 1em;
     color: #fff;
   }
 
-  /* line 213, ../sass/app.scss */
+  /* line 214, ../sass/app.scss */
+  .dock .row {
+    height: 100%;
+  }
+
+  /* line 217, ../sass/app.scss */
   .dock .columns:last-child {
     border-right: none;
   }
 
-  /* line 216, ../sass/app.scss */
+  /* line 220, ../sass/app.scss */
   .dock h6 {
     color: #ffffff;
   }
 }
-/* line 230, ../sass/app.scss */
+/* line 224, ../sass/app.scss */
+iframe {
+  border: none;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+
+/* line 234, ../sass/app.scss */
+* {
+  cursor: url("../cursor.png"), none;
+}
+
+/* line 247, ../sass/app.scss */
 .icon {
   overflow: hidden;
   font-size: 12rem;
@@ -4917,7 +5020,7 @@ li.post-box {
   float: left;
 }
 
-/* line 239, ../sass/app.scss */
+/* line 256, ../sass/app.scss */
 .conditions {
   text-align: left;
   position: relative;
@@ -4928,327 +5031,27 @@ li.post-box {
   padding-top: 0;
 }
 
-/* line 245, ../sass/app.scss */
+/* line 262, ../sass/app.scss */
 .temperature {
-  font-size: 4.5rem;
+  font-size: 5.3rem;
   display: block;
   line-height: 1.1;
+  padding-top: .8rem;
 }
 
-/* line 251, ../sass/app.scss */
+/* line 268, ../sass/app.scss */
 .condition {
   font-size: 2rem;
   display: block;
   line-height: 1.3;
 }
 
-@font-face {
-  font-family: 'ClimaconsRegular';
-  src: url("../font/climacons-webfont.eot");
-  src: url("../font/climacons-webfont.eot?#iefix") format("embedded-opentype"), url("../font/climacons-webfont.woff") format("woff"), url("../font/climacons-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /*  Climacons styles
     ------------------------------------------------------- */
-/* line 270, ../sass/app.scss */
-[class^="weather-"]:before, [class*=" weather-"]:before {
-  font-family: 'ClimaconsRegular';
-}
-
-/* line 278, ../sass/app.scss */
-.weather-0:before {
-  content: "(";
-}
-
-/* tornado */
-/* line 279, ../sass/app.scss */
-.weather-1:before {
-  content: "";
-}
-
-/* tropical storm */
-/* line 280, ../sass/app.scss */
-.weather-2:before {
-  content: "(";
-}
-
-/* hurricane */
-/* line 281, ../sass/app.scss */
-.weather-3:before {
-  content: "z";
-}
-
-/* severe thunderstorms */
-/* line 282, ../sass/app.scss */
-.weather-4:before {
-  content: "z";
-}
-
-/* thunderstorms */
-/* line 283, ../sass/app.scss */
-.weather-5:before {
-  content: "y";
-}
-
-/* mixed rain and snow */
-/* line 284, ../sass/app.scss */
-.weather-6:before {
-  content: "y";
-}
-
-/* mixed rain and sleet */
-/* line 285, ../sass/app.scss */
-.weather-7:before {
-  content: "y";
-}
-
-/* mixed snow and sleet */
-/* line 286, ../sass/app.scss */
-.weather-8:before {
-  content: "e";
-}
-
-/* freezing drizzle */
-/* line 287, ../sass/app.scss */
-.weather-9:before {
-  content: "o";
-}
-
-/* drizzle */
-/* line 288, ../sass/app.scss */
-.weather-10:before {
-  content: "e";
-}
-
-/* freezing rain */
-/* line 289, ../sass/app.scss */
-.weather-11:before {
-  content: "6";
-}
-
-/* showers */
-/* line 290, ../sass/app.scss */
-.weather-12:before {
-  content: "6";
-}
-
-/* showers */
-/* line 291, ../sass/app.scss */
-.weather-13:before {
-  content: "]";
-}
-
-/* snow flurries */
-/* line 292, ../sass/app.scss */
-.weather-14:before {
-  content: "]";
-}
-
-/* light snow showers */
-/* line 293, ../sass/app.scss */
-.weather-15:before {
-  content: "]";
-}
-
-/* blowing snow */
-/* line 294, ../sass/app.scss */
-.weather-16:before {
-  content: "]";
-}
-
-/* snow */
-/* line 295, ../sass/app.scss */
-.weather-17:before {
-  content: "o";
-}
-
-/* hail */
-/* line 296, ../sass/app.scss */
-.weather-18:before {
-  content: "o";
-}
-
-/* sleet */
-/* line 297, ../sass/app.scss */
-.weather-19:before {
-  content: "g";
-}
-
-/* dust */
-/* line 298, ../sass/app.scss */
-.weather-20:before {
-  content: "g";
-}
-
-/* foggy */
-/* line 299, ../sass/app.scss */
-.weather-21:before {
-  content: "g";
-}
-
-/* haze */
-/* line 300, ../sass/app.scss */
-.weather-22:before {
-  content: "g";
-}
-
-/* smoky */
-/* line 301, ../sass/app.scss */
-.weather-23:before {
-  content: "k";
-}
-
-/* blustery */
-/* line 302, ../sass/app.scss */
-.weather-24:before {
-  content: "k";
-}
-
-/* windy */
-/* line 303, ../sass/app.scss */
-.weather-25:before {
-  content: "-";
-}
-
-/* cold */
-/* line 304, ../sass/app.scss */
-.weather-26:before {
-  content: "`";
-}
-
-/* cloudy */
-/* line 305, ../sass/app.scss */
-.weather-27:before {
-  content: "2";
-}
-
-/* mostly cloudy (night) */
-/* line 306, ../sass/app.scss */
-.weather-28:before {
-  content: "1";
-}
-
-/* mostly cloudy (day) */
-/* line 307, ../sass/app.scss */
-.weather-29:before {
-  content: "2";
-}
-
-/* partly cloudy (night) */
-/* line 308, ../sass/app.scss */
-.weather-30:before {
-  content: "1";
-}
-
-/* partly cloudy (day) */
-/* line 309, ../sass/app.scss */
-.weather-31:before {
-  content: "/";
-}
-
-/* clear (night) */
-/* line 310, ../sass/app.scss */
-.weather-32:before {
-  content: "v";
-}
-
-/* sunny */
-/* line 311, ../sass/app.scss */
-.weather-33:before {
-  content: "/";
-}
-
-/* fair (night) */
-/* line 312, ../sass/app.scss */
-.weather-34:before {
-  content: "v";
-}
-
-/* fair (day) */
-/* line 313, ../sass/app.scss */
-.weather-35:before {
-  content: "e";
-}
-
-/* mixed rain and hail */
-/* line 314, ../sass/app.scss */
-.weather-36:before {
-  content: "E";
-}
-
-/* hot */
-/* line 315, ../sass/app.scss */
-.weather-37:before {
-  content: "z";
-}
-
-/* isolated thunderstorms */
-/* line 316, ../sass/app.scss */
-.weather-38:before {
-  content: "z";
-}
-
-/* scattered thunderstorms */
-/* line 317, ../sass/app.scss */
-.weather-39:before {
-  content: "z";
-}
-
-/* scattered thunderstorms */
-/* line 318, ../sass/app.scss */
-.weather-40:before {
-  content: "6";
-}
-
-/* scattered showers */
-/* line 319, ../sass/app.scss */
-.weather-41:before {
-  content: "]";
-}
-
-/* heavy snow */
-/* line 320, ../sass/app.scss */
-.weather-42:before {
-  content: "]";
-}
-
-/* scattered snow showers */
-/* line 321, ../sass/app.scss */
-.weather-43:before {
-  content: "]";
-}
-
-/* heavy snow */
-/* line 322, ../sass/app.scss */
-.weather-44:before {
-  content: "`";
-}
-
-/* partly cloudy */
-/* line 323, ../sass/app.scss */
-.weather-45:before {
-  content: "z";
-}
-
-/* thundershowers */
-/* line 324, ../sass/app.scss */
-.weather-46:before {
-  content: "]";
-}
-
-/* snow showers */
-/* line 325, ../sass/app.scss */
-.weather-47:before {
-  content: "z";
-}
-
-/* isolated thundershowers */
 /*  --------------------------
     Thanks, @Bluxart :: http://www.alessioatzeni.com/blog/css3-digital-clock-with-jquery/
     ----------------------- */
-/* line 341, ../sass/app.scss */
+/* line 292, ../sass/app.scss */
 .clock {
   width: 98%;
   margin: 0 auto 0 auto;
@@ -5256,7 +5059,7 @@ li.post-box {
   color: #fff;
 }
 
-/* line 348, ../sass/app.scss */
+/* line 299, ../sass/app.scss */
 #Date {
   font-size: 1.875em;
   text-align: center;
@@ -5266,7 +5069,7 @@ li.post-box {
   position: relative;
 }
 
-/* line 357, ../sass/app.scss */
+/* line 308, ../sass/app.scss */
 .clock ul {
   width: 100%;
   margin: 0 auto !important;
@@ -5277,7 +5080,7 @@ li.post-box {
   line-height: 1.1;
 }
 
-/* line 366, ../sass/app.scss */
+/* line 317, ../sass/app.scss */
 .clock ul li {
   display: inline;
   text-align: center;
@@ -5288,7 +5091,7 @@ li.post-box {
   color: #fff;
 }
 
-/* line 377, ../sass/app.scss */
+/* line 328, ../sass/app.scss */
 #point {
   padding: 0;
   font-size: 7rem;
@@ -5300,89 +5103,35 @@ li.post-box {
 
 /* Simple Animation */
 @-webkit-keyframes mymove {
-  /* line 388, ../sass/app.scss */
+  /* line 339, ../sass/app.scss */
   0% {
     opacity: .8;
   }
 
-  /* line 389, ../sass/app.scss */
+  /* line 340, ../sass/app.scss */
   50% {
     opacity: .1;
   }
 
-  /* line 390, ../sass/app.scss */
+  /* line 341, ../sass/app.scss */
   100% {
     opacity: .8;
   }
 }
 
 @-moz-keyframes mymove {
-  /* line 395, ../sass/app.scss */
+  /* line 346, ../sass/app.scss */
   0% {
     opacity: .8;
   }
 
-  /* line 396, ../sass/app.scss */
+  /* line 347, ../sass/app.scss */
   50% {
     opacity: .1;
   }
 
-  /* line 397, ../sass/app.scss */
+  /* line 348, ../sass/app.scss */
   100% {
     opacity: .8;
   }
-}
-
-/* line 411, ../sass/app.scss */
-div.user {
-  font-size: 1rem;
-}
-
-/* line 414, ../sass/app.scss */
-div.user span {
-  padding: 0 0 0 1.6rem;
-  font-size: 2rem;
-  color: #fff;
-}
-
-/* line 419, ../sass/app.scss */
-div.user span:before {
-  content: '';
-  background: url("../images/twitter.svg");
-  height: 40px;
-  width: 40px;
-  display: block;
-  position: absolute;
-  top: 1.4rem;
-  left: 1rem;
-  z-index: 99;
-}
-
-/* line 431, ../sass/app.scss */
-div.user img {
-  display: none;
-}
-
-/* line 435, ../sass/app.scss */
-div.user span span {
-  display: none;
-}
-
-/* line 436, ../sass/app.scss */
-p.tweet {
-  margin-top: .3rem;
-  font-size: 1.2rem;
-}
-
-/* line 440, ../sass/app.scss */
-p.tweet a {
-  font-size: 1rem;
-  color: #ededed;
-  font-style: italic;
-  border-bottom: dotted 1px #ededed;
-}
-
-/* line 446, ../sass/app.scss */
-p.interact {
-  display: none;
 }

@@ -23,10 +23,14 @@ $em-base: 16px !default;
 
 // Colors
 
-$primary-color: #3398af;
-$secondary-color: #945b99;
-$tertiary-color: #a89d67;
-$gray: #444;
+$primary-color: #772b2b;
+$secondary-color: #C6A976;
+$tertiary-color: #0B5065;
+$quaternary-color: #0C3C4E;
+$quinary-color: #5E8DA8;
+$senary-color: #04151A;
+$septenary-color: #FFC247;
+$octonary-color: #A6BDDA;
 
 
 // Various global styles
@@ -34,7 +38,7 @@ $gray: #444;
 // $default-float: left;
 
 // $body-bg: #fff;
- $body-font-color: $gray;
+ $body-font-color: $senary-color;
  $body-font-family: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
  $body-font-weight: 100;
 // $body-font-style: normal;
