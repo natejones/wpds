@@ -18,7 +18,6 @@
 		<?php dynamic_sidebar("Dock"); ?>
 	</div>
 	<?php wp_footer(); ?>
-	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js' type='text/javascript' charset='utf-8'></script>
 
 	<!-- CDN Fallback -->
 	<script type="text/javascript">
@@ -26,6 +25,8 @@
 	    document.write(unescape("%3Cscript src='<?php bloginfo('template_url'); ?>/javascripts/vendor/jquery.js' type='text/javascript'%3E%3C/script%3E"));
 	}
 	</script>
+
+
 
 
     <script src="<?php bloginfo('template_url'); ?>/javascripts/foundation/foundation.js"></script>
@@ -36,15 +37,15 @@
 		}
 	</script>
     <script src="<?php bloginfo('template_url'); ?>/javascripts/vendor/app.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/javascripts/vendor/twitterFetcher_v10_min.js"></script>
-  
+    <!-- <script src="<?php bloginfo('template_url'); ?>/javascripts/vendor/twitterFetcher_v10_min.js"></script> -->
+
   <script>
 $(function() {
     $(document).foundation();
 });
 
-    twitterFetcher.fetch('393025966789754880', 'tweets', 1, true, true, false);
+//    twitterFetcher.fetch('393025966789754880', 'tweets', 1, true, true, false);
   </script>
- 
+
  </body>
 </html>

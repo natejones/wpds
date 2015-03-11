@@ -5,6 +5,7 @@
 @import "normalize";
 
 @import "font-awesome";
+@import "fonts";
 
 // Comment out this import if you are customizing you imports below
 //@import "foundation";
@@ -52,14 +53,14 @@
 // @import "foundation/components/dropdown";
 
 @include sticky-footer(200px, ".content", ".content-dock", ".dock");
- 
+
 
 
 body, .columns, .column { padding: 0; }
 
 
-//#   /$$$$$$$$                                                                       /$$                
-//#  |__  $$__/                                                                      | $$                
+//#   /$$$$$$$$                                                                       /$$
+//#  |__  $$__/                                                                      | $$
 //#     | $$    /$$   /$$  /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$ | $$$$$$$  /$$   /$$
 //#     | $$   | $$  | $$ /$$__  $$ /$$__  $$ /$$__  $$ /$$__  $$ |____  $$ /$$__  $$| $$__  $$| $$  | $$
 //#     | $$   | $$  | $$| $$  \ $$| $$  \ $$| $$  \ $$| $$  \__/  /$$$$$$$| $$  \ $$| $$  \ $$| $$  | $$
@@ -68,7 +69,7 @@ body, .columns, .column { padding: 0; }
 //#     |__/    \____  $$| $$____/  \______/  \____  $$|__/       \_______/| $$____/ |__/  |__/ \____  $$
 //#             /$$  | $$| $$                 /$$  \ $$                    | $$                 /$$  | $$
 //#            |  $$$$$$/| $$                |  $$$$$$/                    | $$                |  $$$$$$/
-//#             \______/ |__/                 \______/                     |__/                 \______/ 
+//#             \______/ |__/                 \______/                     |__/                 \______/
 
 
 
@@ -80,14 +81,14 @@ h1, h2, h3, h4, h5, h6, p, li, a {
 
 }
 
-h1 { 
+h1 {
 	text-align: left;
-	font-size: emCalc(24px);
+//	font-size: emCalc(24px);
 	line-height: 1.2;
 }
 
-h2 { 
-	font-size: emCalc(16px);
+h2 {
+//	font-size: emCalc(16px);
 	margin-bottom: .8em;
 	text-transform: uppercase;
 	margin-top: .8em;
@@ -97,14 +98,14 @@ p {
 	padding-top: 0;
 	margin-top: 0;
 	line-height: 1.4;
-	font-size: emCalc(14px);
+//	font-size: emCalc(14px);
 	font-weight: 100;
 }
 p.link  {
 	margin-top: 1em;
 	@include grid-column(12);
 }
-@media #{$small} { 
+@media #{$small} {
 	h1 { font-size: emCalc(80px); }
 	h2 { font-size: emCalc(34px); margin-top: 0; }
 	p { font-size: emCalc(24px); }
@@ -114,7 +115,7 @@ p.link  {
 	}
 }
 @media #{$medium} {
-	h2 { 
+	h2 {
 
 	}
 }
@@ -122,9 +123,9 @@ p.link  {
 
 
 
-//#    /$$$$$$    /$$                                     /$$                                  
-//#   /$$__  $$  | $$                                    | $$                                  
-//#  | $$  \__/ /$$$$$$    /$$$$$$  /$$   /$$  /$$$$$$$ /$$$$$$   /$$   /$$  /$$$$$$   /$$$$$$ 
+//#    /$$$$$$    /$$                                     /$$
+//#   /$$__  $$  | $$                                    | $$
+//#  | $$  \__/ /$$$$$$    /$$$$$$  /$$   /$$  /$$$$$$$ /$$$$$$   /$$   /$$  /$$$$$$   /$$$$$$
 //#  |  $$$$$$ |_  $$_/   /$$__  $$| $$  | $$ /$$_____/|_  $$_/  | $$  | $$ /$$__  $$ /$$__  $$
 //#   \____  $$  | $$    | $$  \__/| $$  | $$| $$        | $$    | $$  | $$| $$  \__/| $$$$$$$$
 //#   /$$  \ $$  | $$ /$$| $$      | $$  | $$| $$        | $$ /$$| $$  | $$| $$      | $$_____/
@@ -147,24 +148,24 @@ li.post-box {
 	width: 0;
 }*/
 .dock { display: none; }
-	@media #{$medium} { 
+	@media #{$medium} {
 
 	}
-	@media #{$large} { 
+	@media #{$large} {
 
 	}
 
 
-		
-	@media #{$small} { 
-	
+
+	@media #{$small} {
+
 		*, html, body {
 		  max-height: 100%;
 		  overflow: hidden;
 		}
 		.orbit-slides-container {
 			height: 100%;
-			min-height: 100%;	
+			min-height: 100%;
 		}
 		li.post-box {
 			height: 100%;
@@ -181,7 +182,7 @@ li.post-box {
 		.page-wrap {
 		  min-height: 100%;
 		  /* equal to footer height */
-		  margin: 0 0 -215px 0; 
+		  margin: 0 0 -215px 0;
 		  padding-bottom: 0;
 		}
 		.page-wrap:after {
@@ -196,7 +197,7 @@ li.post-box {
 		  margin: 0;
 		}
 		.dock {
-			background: rgba(79,75,75,0.62);
+			background: rgba(79,75,75,0.43);
 			position: relative;
 			display: block;
 //			height: 215px;
@@ -207,26 +208,42 @@ li.post-box {
 				border-right: 1px solid rgba(255,255,255,0.4);
 				display: inline-block;
 				height: 100%;
-				padding: 1em;
+				padding: .3em 1em;
 				color: #fff;
 			}
+      .dock .row {
+        height: 100%;
+      }
 			.dock .columns:last-child {
 				border-right: none;
 			}
 			.dock h6 { color: #ffffff; }
-	}	
-	
-	
-//#   /$$      /$$                       /$$     /$$                          
-//#  | $$  /$ | $$                      | $$    | $$                          
-//#  | $$ /$$$| $$  /$$$$$$   /$$$$$$  /$$$$$$  | $$$$$$$   /$$$$$$   /$$$$$$ 
+	}
+
+
+iframe {
+  border:none;
+  margin:0;
+  padding:0;
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+
+
+* { cursor: url('../cursor.png'), none; }
+
+
+//#   /$$      /$$                       /$$     /$$
+//#  | $$  /$ | $$                      | $$    | $$
+//#  | $$ /$$$| $$  /$$$$$$   /$$$$$$  /$$$$$$  | $$$$$$$   /$$$$$$   /$$$$$$
 //#  | $$/$$ $$ $$ /$$__  $$ |____  $$|_  $$_/  | $$__  $$ /$$__  $$ /$$__  $$
 //#  | $$$$_  $$$$| $$$$$$$$  /$$$$$$$  | $$    | $$  \ $$| $$$$$$$$| $$  \__/
-//#  | $$$/ \  $$$| $$_____/ /$$__  $$  | $$ /$$| $$  | $$| $$_____/| $$      
-//#  | $$/   \  $$|  $$$$$$$|  $$$$$$$  |  $$$$/| $$  | $$|  $$$$$$$| $$      
-//#  |__/     \__/ \_______/ \_______/   \___/  |__/  |__/ \_______/|__/      
+//#  | $$$/ \  $$$| $$_____/ /$$__  $$  | $$ /$$| $$  | $$| $$_____/| $$
+//#  | $$/   \  $$|  $$$$$$$|  $$$$$$$  |  $$$$/| $$  | $$|  $$$$$$$| $$
+//#  |__/     \__/ \_______/ \_______/   \___/  |__/  |__/ \_______/|__/
 
-	
+
 .icon {
 	overflow: hidden;
 	//font-size: emCalc(200px);
@@ -234,103 +251,37 @@ li.post-box {
 	text-align: left;
 	padding: 0 0 0 1rem !important;
 	margin-top: -3%;
-	@include grid-column(6); 
+	@include grid-column(6);
 }
 .conditions {
 	//margin: 16px 46px 0 0;
 	text-align: left;
-	@include grid-column(6); 
+	@include grid-column(6);
 	padding-top: 0;
 }
 .temperature {
-	//font-size: emCalc(80px);
-	font-size: 4.5rem;
+	font-size: 5.3rem;
 	display: block;
 	line-height: 1.1;
+	padding-top: .8rem;
 }
 .condition {
 	font-size: 2rem;
-	//font-size: emCalc(30px);
 	display: block;
 	line-height: 1.3;
 }
-	
-@font-face {
-    font-family:'ClimaconsRegular';
-    src: url('../font/climacons-webfont.eot');
-    src: url('../font/climacons-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/climacons-webfont.woff') format('woff'),
-         url('../font/climacons-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 /*  Climacons styles
     ------------------------------------------------------- */
-[class^="weather-"]:before, [class*=" weather-"]:before {
-  font-family: 'ClimaconsRegular';
-}
-a [class^="weather-"], a [class*=" weather-"] {
-
-}
 
 
-.weather-0:before { content:"("; } /* tornado */
-.weather-1:before { content:""; } /* tropical storm */
-.weather-2:before { content:"("; } /* hurricane */
-.weather-3:before { content:"z"; } /* severe thunderstorms */
-.weather-4:before { content:"z"; } /* thunderstorms */
-.weather-5:before { content:"y"; } /* mixed rain and snow */
-.weather-6:before { content:"y"; } /* mixed rain and sleet */
-.weather-7:before { content:"y"; } /* mixed snow and sleet */
-.weather-8:before { content:"e"; } /* freezing drizzle */
-.weather-9:before { content:"o"; } /* drizzle */
-.weather-10:before { content:"e"; } /* freezing rain */
-.weather-11:before { content:"6"; } /* showers */
-.weather-12:before { content:"6"; } /* showers */
-.weather-13:before { content:"]"; } /* snow flurries */
-.weather-14:before { content:"]"; } /* light snow showers */
-.weather-15:before { content:"]"; } /* blowing snow */
-.weather-16:before { content:"]"; } /* snow */
-.weather-17:before { content:"o"; } /* hail */
-.weather-18:before { content:"o"; } /* sleet */
-.weather-19:before { content:"g"; } /* dust */
-.weather-20:before { content:"g"; } /* foggy */
-.weather-21:before { content:"g"; } /* haze */
-.weather-22:before { content:"g"; } /* smoky */
-.weather-23:before { content:"k"; } /* blustery */
-.weather-24:before { content:"k"; } /* windy */
-.weather-25:before { content:"-"; } /* cold */
-.weather-26:before { content:"`"; } /* cloudy */
-.weather-27:before { content:"2"; } /* mostly cloudy (night) */
-.weather-28:before { content:"1"; } /* mostly cloudy (day) */
-.weather-29:before { content:"2"; } /* partly cloudy (night) */
-.weather-30:before { content:"1"; } /* partly cloudy (day) */
-.weather-31:before { content:"/"; } /* clear (night) */
-.weather-32:before { content:"v"; } /* sunny */
-.weather-33:before { content:"/"; } /* fair (night) */
-.weather-34:before { content:"v"; } /* fair (day) */
-.weather-35:before { content:"e"; } /* mixed rain and hail */
-.weather-36:before { content:"E"; } /* hot */
-.weather-37:before { content:"z"; } /* isolated thunderstorms */
-.weather-38:before { content:"z"; } /* scattered thunderstorms */
-.weather-39:before { content:"z"; } /* scattered thunderstorms */
-.weather-40:before { content:"6"; } /* scattered showers */
-.weather-41:before { content:"]"; } /* heavy snow */
-.weather-42:before { content:"]"; } /* scattered snow showers */
-.weather-43:before { content:"]"; } /* heavy snow */
-.weather-44:before { content:"`"; } /* partly cloudy */
-.weather-45:before { content:"z"; } /* thundershowers */
-.weather-46:before { content:"]"; } /* snow showers */
-.weather-47:before { content:"z"; } /* isolated thundershowers */	
-
-
-//#    /$$$$$$  /$$                     /$$      
-//#   /$$__  $$| $$                    | $$      
+//#    /$$$$$$  /$$                     /$$
+//#   /$$__  $$| $$                    | $$
 //#  | $$  \__/| $$  /$$$$$$   /$$$$$$$| $$   /$$
 //#  | $$      | $$ /$$__  $$ /$$_____/| $$  /$$/
-//#  | $$      | $$| $$  \ $$| $$      | $$$$$$/ 
-//#  | $$    $$| $$| $$  | $$| $$      | $$_  $$ 
+//#  | $$      | $$| $$  \ $$| $$      | $$$$$$/
+//#  | $$    $$| $$| $$  | $$| $$      | $$_  $$
 //#  |  $$$$$$/| $$|  $$$$$$/|  $$$$$$$| $$ \  $$
 //#   \______/ |__/ \______/  \_______/|__/  \__/
 
@@ -340,7 +291,7 @@ a [class^="weather-"], a [class*=" weather-"] {
     ----------------------- */
 .clock {
 	width:98%;
-	margin:0 auto 0 auto; 
+	margin:0 auto 0 auto;
 	padding: 0;
 	color:#fff;
 }
@@ -350,11 +301,11 @@ a [class^="weather-"], a [class*=" weather-"] {
 	text-align:center;
 	margin-top:10px;
 	display:block;
-	float:none; 
+	float:none;
 	position:relative;
 }
 
-.clock ul { 
+.clock ul {
 	width:100%;
 	margin:0 auto !important;
 	padding:0 !important;
@@ -363,7 +314,7 @@ a [class^="weather-"], a [class*=" weather-"] {
 	display:block;
 	line-height: 1.1;
 }
-.clock ul li { 
+.clock ul li {
 	display:inline;
 	text-align:center;
 //	font-size: emCalc(60px);
@@ -374,8 +325,8 @@ a [class^="weather-"], a [class*=" weather-"] {
 	color:#fff;
 }
 
-#point { 
-	padding:0; 
+#point {
+	padding:0;
 	font-size: 7rem;
 	position:relative;
 	display: inline;
@@ -383,64 +334,17 @@ a [class^="weather-"], a [class*=" weather-"] {
 	-webkit-animation:mymove 1s ease infinite;
 }
 	/* Simple Animation */
-	@-webkit-keyframes mymove 
+	@-webkit-keyframes mymove
 	{
 	0% {opacity:.8; }
 	50% {opacity:.1; }
-	100% {opacity:.8;  }	
+	100% {opacity:.8;  }
 	}
-	
-	@-moz-keyframes mymove 
+
+	@-moz-keyframes mymove
 	{
 	0% {opacity:.8; }
 	50% {opacity:.1; }
-	100% {opacity:.8;  }	
+	100% {opacity:.8;  }
 	}
 
-
-//#   /$$$$$$$$               /$$   /$$       /$$                        
-//#  |__  $$__/              |__/  | $$      | $$                        
-//#     | $$    /$$  /$$  /$$ /$$ /$$$$$$   /$$$$$$    /$$$$$$   /$$$$$$ 
-//#     | $$   | $$ | $$ | $$| $$|_  $$_/  |_  $$_/   /$$__  $$ /$$__  $$
-//#     | $$   | $$ | $$ | $$| $$  | $$      | $$    | $$$$$$$$| $$  \__/
-//#     | $$   | $$ | $$ | $$| $$  | $$ /$$  | $$ /$$| $$_____/| $$      
-//#     | $$   |  $$$$$/$$$$/| $$  |  $$$$/  |  $$$$/|  $$$$$$$| $$      
-//#     |__/    \_____/\___/ |__/   \___/     \___/   \_______/|__/      
-
-#tweets { }
-div.user {
-	font-size: 1rem;
-}
-	div.user span {
-		padding: 0 0 0 1.6rem;
-		font-size: 2rem;
-		color: #fff;
-	}
-		div.user span:before {
-			content: '';
-			background: url('../images/twitter.svg');
-			height: 40px;
-			width: 40px;
-			display: block;
-			position: absolute;
-			top: 1.4rem;
-			left: 1rem;
-			z-index: 99;
-			
-		}
-	div.user img {
-//		@include border-radius(50%);
-		display: none;
-	}
-	div.user span span { display: none; }
-p.tweet {
-	margin-top: .3rem;
-	font-size: 1.2rem;
-}
-	p.tweet a { 
-		font-size: 1rem;
-		color: #ededed; 
-		font-style: italic;
-		border-bottom: dotted 1px #ededed;
-	}
-p.interact { display: none; }                                                             
