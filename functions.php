@@ -293,15 +293,13 @@ foreach ($sidebars as $dock) {
 //***********************
     function load_my_scripts() {
         wp_deregister_script( 'jquery' );
-        wp_register_script('jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js');
+        wp_register_script('jquery', ('//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'), false, '2.1.1');
         wp_enqueue_script('jquery');
         wp_register_script('weather', '//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js');
         wp_enqueue_script('weather');
-		    //wp_register_script('twitter', bloginfo('template_url').'/javascripts/vendor/twitterFetcher_v10_min.js'__FILE__));
-				//wp_enqueue_script('twitter');
 
     }
-add_action('init', 'load_my_scripts');
+add_action('wp_enqueue_scripts', 'load_my_scripts');
 
 
 
