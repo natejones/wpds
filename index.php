@@ -31,7 +31,7 @@ get_header(); ?>
               $link = get_post_meta($post->ID, 'link', true);
 
 					    if($background_image != '') :
-                echo '<li class="post-box large-12 columns" style="background:url(' . get_post_meta($post->ID, 'background-image', true) . ') 0 0 no-repeat; width:100%; height:100%; background-size:contain;">';
+                echo '<li class="post-box large-12 columns" style="background:url(' . get_post_meta($post->ID, 'background-image', true) . ') 0 0 no-repeat; width:100%; height:100%; background-size:contain;"></li>';
               else :
                   echo '<li class="post-box large-12 columns" style="background:#' . get_post_meta($post->ID, 'background-color', true) . ';">',
           						'<h1 style="color:#' . get_post_meta($post->ID, 'headline-color', true) . ';">' . get_the_title() . '</h1>',
